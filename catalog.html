@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+  </head>
+  <body>
+
+   <header class="page-header">
+   	<figure class="main-logo">
+   		<h1 class="visually-hidden">Device</h1>
+   		<img src="http://placehold.it/150x100" alt="Девайс" class="header-logo">
+   	</figure>
+   	<nav class="navigation">
+   		   <div class="navigation_up">
+   			   <form class="search-block">
+   				   <input type="text" name="search">
+   				   <button></button>
+   			   </form>
+   			   <div class="user-block">
+                  <p class="user-name">Валентин Петухов</p>
+   				   <a class="log-in visually-hidden" href="#">Войти</a>
+                  <a href="#" class="log-out">Выйти</a>
+   			   </div>
+   			   <ul class="buyer-block">
+   			      <li class="">
+   				      <a href="#">Сравнить</a>
+   			      </li>
+   			      <li class="">
+   				      <a href="#">Корзина</a>
+   			      </li>
+   			  </ul>
+   			</div>
+   		   <ul class="navigation_down">
+   			       <li class="catalog">
+   				       <a href="#">Каталог товаров</a>
+   			       </li>
+   			       <li class="delivery">
+   				       <a href="#">Доставка</a>
+   			       </li>
+   			       <li class="guarantee">
+   				       <a href="#">Гарантия</a>
+   			       </li>
+   			       <li class="contacts">
+   				       <a href="#">Контакты</a>
+   			       </li>
+   		   </ul>
+            <div class="catalog-items visually-hidden">
+               <ul>
+                  <li><a href="#">Виртуальная реальность</a></li>
+                  <li><a href="#">Моноподы для селфи</a></li>
+                  <li><a href="#">Экшн-камеры</a></li>
+               </ul>
+               <ul>
+                  <li><a href="#">Фитнес-браслеты</a></li>
+                  <li><a href="#">Умные часы</a></li>
+               </ul>
+               <ul>
+                  <li><a href="#">Квадрокоптеры</a></li>
+               </ul>
+            </div>
+   	</nav>
+   </header>
+
+   <main class="page-main_catalog">
+      <section class="catalog-nav">
+         <h2 class="catalog-name">Моноподы для селфи</h2>
+         <ul class="catalog-name_list">
+            <li class="catalog-name_list-item"><a href="#">Главная</a></li>
+            <li class="catalog-name_list-item"><a href="#">Каталог товаров</a></li>
+            <li class="catalog-name_list-item"><a href="#">Моноподы для селфи</a></li>
+         </ul>
+      </section>
+      <section class="catalog-sort">
+         <p>Сортировка:</p>
+         <div class="catalog-sort_filter">
+            <button>По цене</button>
+            <button>По типу</button>
+            <button>По популярности</button>
+            <button>prev</button>
+            <button>next</button>
+         </div>
+      </section>
+      <section class="catalog-filter">
+         <form action="Post" class="catalog-filter_form">
+            
+         </form>
+      </section>
+      <section class="catalog-goods">
+         <table class="catalog-goods_list">
+            <tr class="catalog-goods_col-1">
+               <td class="catalog-goods_row-1">
+                  <img src="http://placehold.it/200x200" alt="селфи-палка" class="catalog-goods_item">
+                  <p class="catalog-goods_name">Любительская селфи-палка</p>
+                  <p class="catalog-goods_price">500 руб.</p>
+               </td>
+               <td class="catalog-goods_row-2">
+                  <img src="http://placehold.it/200x200" alt="селфи-палка" class="catalog-goods_item">
+                  <p class="catalog-goods_name">Непотопляемая селфи-палка</p>
+                  <p class="catalog-goods_price">2500 руб.</p>
+               </td>
+            </tr>
+            <tr class="catalog-goods_col-2">
+               <td class="catalog-goods_row-1">
+                  <img src="http://placehold.it/200x200" alt="селфи-палка" class="catalog-goods_item">
+                  <p class="catalog-goods_name">Профессиональная селфи-палка</p>
+                  <p class="catalog-goods_price">1500 руб.</p>
+               </td>
+               <td class="catalog-goods_row-2">
+                  <img src="http://placehold.it/200x200" alt="селфи-палка" class="catalog-goods_item">
+                  <p class="catalog-goods_name">Селфи-палка &laquo;Следуй за мной&raquo; </p>
+                  <p class="catalog-goods_price">4900 руб.</p>
+               </td>
+            </tr>
+         </table>
+      </section>
+      <section class="catalog-pages">
+         <button class="catalog-btn_prev" name="prev">Назад</button>
+         <ul class="catalog-pages_list">
+            <li class="catalog-pages_item"><a href="#">1</a></li>
+            <li class="catalog-pages_item"><a href="#">2</a></li>
+            <li class="catalog-pages_item"><a href="#">3</a></li>
+         </ul>
+         <button class="catalog-btn_next" name="next">Вперед</button>
+      </section>
+
+
+   </main>
+
+   <footer class="page-footer">
+   	<div class="footer-up">
+       <img src="http://placehold.it/50x50" alt="Логотип" class="footer-logo">
+       <div class="user_buyer-block">
+            <p class="user-name">Валентин Петухов</p>
+            <a class="log-in visually-hidden" href="#">Войти</a>
+            <a href="#" class="log-out">Выйти</a>
+            <a href="#">Сравнить</a>
+            <a href="#">Корзина</a>
+       </div>  
+      </div>
+      <div class="footer-center">
+         <p class="adress">г. Москва, ул. Строителей, 15</p>
+         <div class="footer-services">
+            <a href="#">Доставка</a>
+            <a href="#">Гарантии</a>
+            <a href="#">Контакты</a>
+         </div>
+         <p class="number">Тел.: +7 (495) 495-95-95</p>
+      </div>
+      <div class="footer-down">
+         <div class="social">
+            <a class="fb-icon" href="http://facebook.com"></a>
+            <a class="inst-icon" href="http://instagram.com"></a>
+            <a class="twit-icon" href="http://twitter.com"></a>
+         </div>
+      </div>
+   </footer>
+
+
+   <form action="post">
+     <!--  формы будут позже -->
+   </form>
+   <div class="map-popup">
+      <img src="http://placehold.it/200x400" alt="Наше расположение" class="map-popup_image">
+   </div>
+
+  </body>
+</html>
