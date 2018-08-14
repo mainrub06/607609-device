@@ -12,16 +12,14 @@
    	<a class="main-logo">
    		<img src="http://placehold.it/150x100" alt="Девайс" class="header-logo">
    	</a>
-   	<nav class="navigation">
-   		   <div class="navigation_up">
-   			   <form class="search-block">
+   	<div class="navigation-block">
+   		<div class="navigation_up">
+   			   <form action="http://echo.htmlacademy.ru" method="GET" class="search-block">
    				   <input type="text" name="search">
-   				   <button></button>
+   				   <button type="submit"></button>
    			   </form>
    			   <div class="user-block">
-                  <p class="user-name visually-hidden">Валентин Петухов</p>
    				   <a class="log-in" href="#">Войти</a>
-                  <a href="#" class="log-out visually-hidden">Выйти</a>
    			   </div>
    			   <ul class="buyer-block">
    			      <li class="">
@@ -31,8 +29,9 @@
    				      <a href="#">Корзина</a>
    			      </li>
    			  </ul>
-   			</div>
-   		   <ul class="navigation_down">
+   		</div>
+   		<nav class="main-navigation">
+   		   <ul class="main-navigation_list">
    			       <li class="catalog">
    				       <a href="#">Каталог товаров</a>
    			       </li>
@@ -60,7 +59,8 @@
                   <li><a href="#">Квадрокоптеры</a></li>
                </ul>
             </div>
-   	</nav>
+        </nav>
+   	</div>
    </header>
 
    <main class="page-main">
@@ -68,8 +68,8 @@
 
       <!-- Здесь радио-инпуты для двух слайдеров -->
 
-
-   	<input type="radio" class="visually-hidden" name="toggle-catalog" id="btn-1" checked>
+      
+   	  <input type="radio" class="visually-hidden" name="toggle-catalog" id="btn-1" checked>
       <input type="radio" class="visually-hidden" name="toggle-catalog" id="btn-2">
       <input type="radio" class="visually-hidden" name="toggle-catalog" id="btn-3">
       <input type="radio" class="visually-hidden" name="toggle-services" id="btn-4" checked>

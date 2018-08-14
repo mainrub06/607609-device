@@ -11,40 +11,40 @@
       <a href="index.html" class="main-logo">
          <img src="http://placehold.it/150x100" alt="Девайс" class="header-logo">
       </a>
-   	<nav class="navigation">
-   		   <div class="navigation_up">
-   			   <form class="search-block">
-   				   <input type="text" name="search">
-   				   <button></button>
-   			   </form>
-   			   <div class="user-block">
-                  <p class="user-name">Валентин Петухов</p>
-   				   <a class="log-in visually-hidden" href="#">Войти</a>
-                  <a href="#" class="log-out">Выйти</a>
-   			   </div>
-   			   <ul class="buyer-block">
-   			      <li class="">
-   				      <a href="#">Сравнить</a>
-   			      </li>
-   			      <li class="">
-   				      <a href="#">Корзина</a>
-   			      </li>
-   			  </ul>
-   			</div>
-   		   <ul class="navigation_down">
-   			       <li class="catalog">
-   				       <a href="#">Каталог товаров</a>
-   			       </li>
-   			       <li class="delivery">
-   				       <a href="#">Доставка</a>
-   			       </li>
-   			       <li class="guarantee">
-   				       <a href="#">Гарантия</a>
-   			       </li>
-   			       <li class="contacts">
-   				       <a href="#">Контакты</a>
-   			       </li>
-   		   </ul>
+   	<div class="navigation-block">
+         <div class="navigation_up">
+               <form action="http://echo.htmlacademy.ru" method="GET" class="search-block">
+                  <input type="text" name="search">
+                  <button type="submit"></button>
+               </form>
+               <div class="user-block">
+                  <a href="#" class="user-name ">Валентин Петухов</a>
+                  <a href="#" class="log-out visually-hidden">Выйти</a>
+               </div>
+               <ul class="buyer-block">
+                  <li class="">
+                     <a href="#">Сравнить</a>
+                  </li>
+                  <li class="">
+                     <a href="#">Корзина</a>
+                  </li>
+              </ul>
+         </div>
+         <nav class="main-navigation">
+            <ul class="main-navigation_list">
+                   <li class="catalog">
+                      <a href="#">Каталог товаров</a>
+                   </li>
+                   <li class="delivery">
+                      <a href="#">Доставка</a>
+                   </li>
+                   <li class="guarantee">
+                      <a href="#">Гарантия</a>
+                   </li>
+                   <li class="contacts">
+                      <a href="#">Контакты</a>
+                   </li>
+            </ul>
             <div class="catalog-items visually-hidden">
                <ul>
                   <li><a href="#">Виртуальная реальность</a></li>
@@ -59,7 +59,8 @@
                   <li><a href="#">Квадрокоптеры</a></li>
                </ul>
             </div>
-   	</nav>
+         </nav>
+      </div>
    </header>
 
    <main class="page-main_catalog">
