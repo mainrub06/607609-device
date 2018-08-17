@@ -4,68 +4,50 @@
     display: block;
 }
 
-.sprite-__-_____ {
-    width: 32px;
-    height: 32px;
-    background-position: -5px -5px;
-}
-
-.sprite-___-_____ {
-    width: 32px;
-    height: 32px;
-    background-position: -5px -47px;
-}
-
-.sprite-______-_____ {
-    width: 32px;
-    height: 32px;
-    background-position: -5px -89px;
-}
-
 .sprite-cart {
     width: 12px;
     height: 12px;
-    background-position: -5px -131px;
+    background-position: -5px -5px;
 }
 
 .sprite-compare {
     width: 10px;
     height: 10px;
-    background-position: -5px -153px;
+    background-position: -5px -27px;
 }
 
 .sprite-icon-down-dir-_____-3 {
     width: 11px;
     height: 10px;
-    background-position: -5px -173px;
+    background-position: -5px -47px;
 }
 
 .sprite-icon-up-dir-_____-3 {
     width: 11px;
     height: 10px;
-    background-position: -5px -193px;
+    background-position: -5px -67px;
 }
 
-.sprite-logo-html {
-    width: 27px;
-    height: 35px;
-    background-position: -5px -213px;
+.sprite-nav-arrow {
+    width: 4px;
+    height: 7px;
+    background-position: -5px -87px;
 }
 
 .sprite-plus {
     width: 16px;
     height: 16px;
-    background-position: -5px -258px;
+    background-position: -5px -104px;
 }
 
 .sprite-search {
     width: 16px;
     height: 16px;
-    background-position: -5px -284px;
+    background-position: -5px -130px;
 }
 
 .sprite-user {
     width: 13px;
     height: 12px;
-    background-position: -5px -310px;
+    background-position: -5px -156px;
 }
