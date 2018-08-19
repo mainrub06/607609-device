@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/normalize v8.css" type="text/css">
   </head>
   <body>
 
@@ -15,8 +16,8 @@
 	   	<div class="navigation-block">
        		<div class="navigation-up">
       		   <form action="http://echo.htmlacademy.ru" method="GET" class="search-block">
-      			   <input type="search" name="search">
-      			   <button type="submit"></button>
+      			   <input type="search" name="search" aria-label="поисковое окно">
+      			   <button type="submit" aria-label="кнопка потвердить поиск"></button>
       		   </form>
       		   <div class="user-block">
       			   <a class="log-in" href="#">Войти</a>
@@ -141,9 +142,9 @@
          			</table>
       	    </div>
           <div class="catalog-radio">
-             <label class="radio-button" for="btn-1">Кнопка 1</label>
-             <label class="radio-button" for="btn-2">Кнопка 2</label>
-             <label class="radio-button" for="btn-3">Кнопка 3</label>
+             <label tabindex="0" class="radio-button" for="btn-1" aria-label="переключение слайду Делай селфи, как Бэн Стиллер!">Кнопка 1</label>
+             <label tabindex="0" class="radio-button" for="btn-2"aria-label="переключение слайду Худеем правильно!">Кнопка 2</label>
+             <label tabindex="0" class="radio-button" for="btn-3"aria-label="переключение слайду Порхает как бабочка, жалит как пчела!">Кнопка 3</label>
           </div>
          </section>
       </div>
@@ -165,11 +166,11 @@
       <div class="services-wrapper">
          <section class="services">
       			<ul>
-      				<li><label for="btn-4">Доставка</label>
+      				<li ><label tabindex="0" for="btn-4">Доставка</label>
       				</li>
-      				<li><label for="btn-5">Гарантия</label>
+      				<li ><label tabindex="0" for="btn-5">Гарантия</label>
       				</li>
-      				<li><label for="btn-6">Кредит</label>
+      				<li ><label tabindex="0" for="btn-6">Кредит</label>
       				</li>
       			</ul>
       			<div class="delivery-slide services-slider">
@@ -239,9 +240,9 @@
       </div>
       <div class="footer-down">
          <div class="footer-social">
-            <a class="fb-icon" href="http://facebook.com"></a>
-            <a class="inst-icon" href="http://instagram.com"></a>
-            <a class="twit-icon" href="http://twitter.com"></a>
+            <a class="fb-icon" href="http://facebook.com" aria-label="наша страничка в фейсбуке"></a>
+            <a class="inst-icon" href="http://instagram.com" aria-label="наша страничка в инстаграме"></a>
+            <a class="twit-icon" href="http://twitter.com" aria-label="наша страничка в твиттере"></a>
          </div>
       </div>
    </footer>
