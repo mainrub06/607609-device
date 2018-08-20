@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/normalize v8.css" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
   </head>
   <body>
 
@@ -16,7 +16,7 @@
 	   	<div class="navigation-block">
        		<div class="navigation-up">
       		   <form action="http://echo.htmlacademy.ru" method="GET" class="search-block">
-      			   <input type="search" name="search" aria-label="поисковое окно">
+      			   <input type="search" name="search">
       			   <button type="submit" aria-label="кнопка потвердить поиск"></button>
       		   </form>
       		   <div class="user-block">
@@ -142,9 +142,9 @@
          			</table>
       	    </div>
           <div class="catalog-radio">
-             <label tabindex="0" class="radio-button" for="btn-1" aria-label="переключение слайду Делай селфи, как Бэн Стиллер!">Кнопка 1</label>
-             <label tabindex="0" class="radio-button" for="btn-2"aria-label="переключение слайду Худеем правильно!">Кнопка 2</label>
-             <label tabindex="0" class="radio-button" for="btn-3"aria-label="переключение слайду Порхает как бабочка, жалит как пчела!">Кнопка 3</label>
+             <label tabindex="0" class="radio-button" for="btn-1"  aria-label="переключение к слайду Делай селфи, как Бэн Стиллер!">Кнопка 1</label>
+             <label tabindex="0" class="radio-button" for="btn-2" aria-label="переключение к слайду Худеем правильно!">Кнопка 2</label>
+             <label tabindex="0" class="radio-button" for="btn-3" aria-label="переключение к слайду Порхает как бабочка, жалит как пчела!">Кнопка 3</label>
           </div>
          </section>
       </div>
@@ -248,7 +248,7 @@
    </footer>
 
    <div class="feedback visually-hidden">
-   	   <div class="feedback-close"><a href="#"></a></div>
+   	   <div class="feedback-close"><a href="#" aria-label="закрыть форму обратной связи"></a></div>
   	   <form class="feedback-form" action="http://echo.htmlacademy.ru" method="POST">
   		   	<label for="form-name"><b>Ваше имя:</b></label>
   		   	<input id="form-name" type="text" name="name" placeholder="Имя Фамилия">
@@ -260,7 +260,7 @@
   	   </form>
    </div>
    <div class="map-popup visually-hidden">
-      <div class="map-popup-close"><a href="#"></a></div>
+      <div class="map-popup-close"><a href="#" aria-label="Закрыть карту"></a></div>
       <img src="img/map-big.png" width="960" height="559" alt="Наше расположение" class="map-popup-image">
    </div>
 

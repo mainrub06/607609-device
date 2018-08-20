@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
   </head>
   <body>
 
@@ -14,11 +15,11 @@
    	  <div class="navigation-block">
          <div class="navigation-up">
                <form action="http://echo.htmlacademy.ru" method="GET" class="search-block">
-                  <input type="search" name="search" aria-label="поисковое окно">
+                  <input type="search" name="search">
                <button type="submit" aria-label="кнопка потвердить поиск"></button>
                </form>
                <div class="user-block">
-                  <a href="#" class="user-name" aria-label="Переход на стрпницу поьзователя Валентин Петухов">Валентин Петухов</a>
+                  <a href="#" class="user-name">Валентин Петухов</a>
                   <a href="#" class="log-in visually-hidden">Выйти</a>
                </div>
                <ul class="buyer-block">
@@ -100,11 +101,11 @@
             <div class="bluetooth-toggle">
               <p><b>Bluetooth</b></p>
               <div class="toggles visually-hidden">
-                <input class="toggle-yes" type="radio" name="bluetooth">
-                <input class="toggle-no" type="radio" name="bluetooth">
+                <input id="toggle-yes" type="radio" name="bluetooth">
+                <input id="toggle-no" type="radio" name="bluetooth">
               </div>
-              <label for="toogle-yes">Есть</label>
-              <label for="toogle-no">Нет</label>
+              <label for="toggle-yes">Есть</label>
+              <label for="toggle-no">Нет</label>
             </div>
             <button class="btn" type="submit">Показать</button>
          </form>
@@ -179,7 +180,7 @@
       <div class="footer-up">
       <a href="index.html"><img src="img/footer-logo.png" width="163" height="36" alt="Логотип" class="footer-logo"></a>
       <div class="footer-buyer-block">
-          <a class="user-name" aria-label="Переход на стрпницу поьзователя Валентин Петухов">Валентин Петухов</a>
+          <a class="user-name">Валентин Петухов</a>
           <a href="#" class="log-in">Выйти</a>
           <a href="#">Сравнить</a>
           <a href="#">Корзина</a>
