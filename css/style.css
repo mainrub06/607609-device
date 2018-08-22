@@ -1,3 +1,14 @@
+/* подключение шрифта */
+@font-face {
+  font-family: Gilroy ExtraBold;
+  src: url(fonts/gilroyextrabold.woff2) format('woff2');
+
+}
+@font-face {
+  font-family: Gilroy Light;
+  src: url(fonts/gilroylight.woff) format('woff');
+}
+
 body {
   margin: 0;
 }
@@ -10,9 +21,34 @@ a {
   text-decoration: none;
 }
 
-@font-face {
-  font-family: Gilroy ExtraBold;
-  src: url(fonts/gilroyextrabold.woff2) format('woff2');
+
+/* Начало базовой стилизации (шрифты, фокусы, ховеры др.) */
+.navigation-block ul {
+  list-style: none;
+}
+.navigation-block a {
+  font-family: open Sans light, sans-serif;
+  font-size: 15px;
+  color: black;
 }
 
+.navigation-block input[placeholder] {
+  font-family: open Sans light, sans-serif;
+  font-size: 15px;
+  color: rgba(0,0,0, 100);
+}
 
+.navigation-top a {
+  line-height: 30px;
+}
+
+.main-navigation a {
+  font-family: Gilroy ExtraBold, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+.catalog-items a {
+  font-family: Open Sans light, sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+}
