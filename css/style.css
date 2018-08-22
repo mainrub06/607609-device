@@ -1,38 +1,18 @@
-.visually-hidden {
-	display: none;
-}
-
-
-
 body {
-	background-color: lightgreen;
-}
-label {
-	cursor:pointer;
-	width: 150px;
-	height: 50px;
-	background-color: red; 
+  margin: 0;
 }
 
-
-
-
-.slider-page {
-	display: none;
+img {
+  max-width: 100%;
 }
 
-.services-slider {
-	display:none;
+a {
+  text-decoration: none;
 }
 
-#btn-1:checked ~ .catalog-wrapper .slide-1,
-#btn-2:checked ~ .catalog-wrapper .slide-2,
-#btn-3:checked ~ .catalog-wrapper .slide-3 {
-	display: block;
+@font-face {
+  font-family: Gilroy ExtraBold;
+  src: url(fonts/gilroyextrabold.woff2) format('woff2');
 }
 
-#btn-4:checked ~ .services-wrapper .delivery-slide,
-#btn-5:checked ~ .services-wrapper .guarantee-slide,
-#btn-6:checked ~ .services-wrapper .credit-slide {
-	display: block;
-}
+
