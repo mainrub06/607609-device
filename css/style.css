@@ -6,7 +6,15 @@
 }
 @font-face {
   font-family: Gilroy Light;
-  src: url(fonts/gilroylight.woff) format('woff');
+  src: url(fonts/gilroylight.woff2) format('woff2');
+}
+@font-face {
+  font-family: open sans;
+  src: url(fonts/opensans.woff2) format('woff2');
+}
+@font-face {
+  font-family: open sans light;
+  src: url(fonts/opensanslight.woff2) format('woff2');
 }
 
 body {
@@ -32,10 +40,17 @@ a {
   color: black;
 }
 
-.navigation-block input[placeholder] {
+.navigation-block input {
   font-family: open Sans light, sans-serif;
   font-size: 15px;
-  color: rgba(0,0,0, 100);
+}
+
+.navigation-block input::-moz-placeholder {
+  color: rgba(0,0,0, 0.3);
+}
+
+.navigation-block input::-webkit-input-placeholder {
+  color: rgba(0,0,0, 0.3);
 }
 
 .navigation-top a {
@@ -47,6 +62,7 @@ a {
   font-size: 18px;
   line-height: 24px;
 }
+
 .catalog-items a {
   font-family: Open Sans light, sans-serif;
   font-size: 15px;
