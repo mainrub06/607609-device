@@ -257,8 +257,87 @@ a {
   text-transform: Uppercase;
 }
 
+.catalog-goods-sort ul {
+  list-style: none;
+}
+
 .catalog-goods-filter a {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 18px;
 }
+
+.catalog-filter-form p {
+  font-family: 'Gilroy ExtraBold', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.catalog-goods-grey {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-filter-form label {
+  font-family: 'open sans light', sans-serif;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.bluetooth-toggle label {
+  font-family: 'open sans light', sans-serif;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.catalog-filter-form ul {
+  list-style: none;
+}
+
+.pagination a {
+  font-family: 'Gilroy ExtraBold', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3px;
+  color: black;
+}
+
+.pagination .pagination-uppercase {
+  text-transform: uppercase;
+}
+.pagination-list {
+  list-style: none;
+}
+
+.pagination .pagination-grey {
+  color: rgba(0,0,0, 0.3);
+}
+
+
+
+.catalog-goods-list {
+  list-style: none;
+  color: black;
+}
+
+.catalog-goods-item a {
+  font-family: 'Gilroy ExtraBold', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: black;
+}
+
+.catalog-goods-item p {
+  font-family: 'Gilroy Light', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #464646;
+}
+
+.catalog-goods-hover .catalog-goods-grey {
+  font-family: 'Gilroy Light', sans-serif;
+  font-size: 13px;
+  line-height: 36px;
+  color: rgba(0,0,0, 0.3);
+}
+
+
