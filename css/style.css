@@ -1,19 +1,21 @@
 /* подключение шрифта */
+
+
 @font-face {
-  font-family: Gilroy ExtraBold;
+  font-family: 'Gilroy ExtraBold';
   src: url(fonts/gilroyextrabold.woff2) format('woff2');
 
 }
 @font-face {
-  font-family: Gilroy Light;
+  font-family: 'Gilroy Light';
   src: url(fonts/gilroylight.woff2) format('woff2');
 }
 @font-face {
-  font-family: open sans;
+  font-family: 'open sans';
   src: url(fonts/opensans.woff2) format('woff2');
 }
 @font-face {
-  font-family: open sans light;
+  font-family: 'open sans light';
   src: url(fonts/opensanslight.woff2) format('woff2');
 }
 
@@ -31,17 +33,35 @@ a {
 
 
 /* Начало базовой стилизации (шрифты, фокусы, ховеры др.) */
+
+
+
+.btn {
+  font-family: 'Gilroy ExtraBold' , sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 4px;
+
+}
+
+
+/* -------HEADER------ */
 .navigation-block ul {
   list-style: none;
 }
+
 .navigation-block a {
-  font-family: open Sans light, sans-serif;
+  font-family: 'open Sans light', sans-serif;
   font-size: 15px;
   color: black;
 }
 
 .navigation-block input {
-  font-family: open Sans light, sans-serif;
+  font-family: 'open Sans light' , sans-serif;
   font-size: 15px;
 }
 
@@ -58,13 +78,147 @@ a {
 }
 
 .main-navigation a {
-  font-family: Gilroy ExtraBold, sans-serif;
+  font-family: 'Gilroy ExtraBold', sans-serif;
   font-size: 18px;
   line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
 }
 
 .catalog-items a {
-  font-family: Open Sans light, sans-serif;
+  font-family: 'Open Sans light' , sans-serif;
   font-size: 15px;
   line-height: 36px;
+  text-transform: none;
+  letter-spacing: 0px;
 }
+
+/* ------catalog-slider------ */
+
+.slider-page .slider-title {
+  font-family: 'Gilroy ExtraBold', sans-serif;
+  font-size: 47px;
+  line-height: 56px;
+}
+
+.slider-description {
+  font-family: 'Open Sans light', sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #464646;
+}
+
+.slider-table .col-1 {
+  font-family: 'Gilroy light', sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  color: black;
+}
+
+.slider-table .col-2 {
+  font-family: 'open sans light', sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+}
+/* -----------Popular-block-------- */
+
+.popular-block a {
+  font-family: 'Gilroy ExtraBold', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: black;
+}
+
+.popular-block ul {
+  list-style: none;
+}
+
+/* -------------Services---------- */
+
+.services ul {
+  font-family: 'Gilroy ExtraBold', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  list-style: none;
+}
+.services ul li:nth-child(1) {
+  color: #f7e184;
+}
+.services label:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.services-slider b {
+  font-family: 'Gilroy ExtraBold', sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+}
+
+.services-slider p {
+  font-family: 'Open Sans Light', sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.about-us h2,
+.contacts h2 {
+  font-family: 'Gilroy ExtraBold', sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+}
+
+.about-us p,
+.contacts p {
+  font-family: 'Open Sans Light', sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.about-us ul p {
+  font-family: 'Gilroy ExtraBold', sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.page-footer {
+  color: white;
+  background-color: #464646;
+}
+
+.page-footer p {
+  font-family: 'open Sans light', sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.footer-services ul {
+  list-style: none;
+}
+
+.page-footer a {
+  font-family: 'open Sans light', sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  color: white;
+}
+
+.footer-services {
+  list-style: none;
+}
+
+.footer-services a {
+
+  font-family: 'Gilroy ExtraBold', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.feedback-form label {
+  font-family: 'Open Sans Light', sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+}
+
