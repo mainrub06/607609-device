@@ -50,6 +50,11 @@ a {
 
 
 /* -------HEADER------ */
+.page-header {
+  background-color: #f7e296;
+
+}
+
 .navigation-block ul {
   list-style: none;
 }
@@ -222,3 +227,38 @@ a {
   line-height: 30px;
 }
 
+/* CATALOG PART-STYLE */
+
+.user-block .grey-style {
+  color: rgba(0,0,0, 0.3);
+}
+.catalog-name {
+  font-family: 'Gilroy ExtraBold', sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  color: black;
+}
+
+.catalog-name-breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs-item a {
+  font-family: 'Open Sans Light', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0,0,0, 0.3);
+}
+
+.catalog-goods-sort p {
+  font-family: 'Gilroy ExtraBold', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: Uppercase;
+}
+
+.catalog-goods-filter a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
