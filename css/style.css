@@ -312,8 +312,6 @@ a {
   color: rgba(0,0,0, 0.3);
 }
 
-
-
 .catalog-goods-list {
   list-style: none;
   color: black;
@@ -340,4 +338,20 @@ a {
   color: rgba(0,0,0, 0.3);
 }
 
+/* фоны */
 
+.catalog-filter {
+  background-color: #efefef;
+}
+
+.catalog-goods-sort {
+  background-color: #ebebeb;
+}
+
+.catalog-filter-bkg {
+  background-color: #dcdcdc;
+}
+
+.pagination {
+  background-color: #ebebeb;
+}
