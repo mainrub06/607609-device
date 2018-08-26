@@ -47,7 +47,7 @@
        				       <a href="#">Контакты</a>
        			       </li>
        		   </ul>
-                <div class="catalog-items ">
+                <div class="catalog-items visually-hidden">
                    <ul>
                             <li>
                                 <a href="#">Виртуальная реальность</a>
@@ -81,12 +81,12 @@
 
       <!-- Здесь радио-инпуты для двух слайдеров -->
 
-   	  <input type="radio" class="visually-hidden" name="toggle-catalog" id="btn-1" checked>
-      <input type="radio" class="visually-hidden" name="toggle-catalog" id="btn-2">
-      <input type="radio" class="visually-hidden" name="toggle-catalog" id="btn-3">
-      <input type="radio" class="visually-hidden" name="toggle-services" id="btn-4" checked>
-      <input type="radio" class="visually-hidden" name="toggle-services" id="btn-5">
-      <input type="radio" class="visually-hidden" name="toggle-services" id="btn-6">
+   	  <input type="radio" class="hidden-input" name="toggle-catalog" id="btn-1" checked>
+      <input type="radio" class="hidden-input" name="toggle-catalog" id="btn-2">
+      <input type="radio" class="hidden-input" name="toggle-catalog" id="btn-3">
+      <input type="radio" class="hidden-input" name="toggle-services" id="btn-4" checked>
+      <input type="radio" class="hidden-input" name="toggle-services" id="btn-5">
+      <input type="radio" class="hidden-input" name="toggle-services" id="btn-6">
 
       <!-- -->
 
@@ -102,7 +102,7 @@
          				<p class="description">Самая длиная палка для селфи доступна в нашем магазине.</p>
          				<p class="description">Восемь(Восемь, Карл!) метров длиной и весом всего пять килограмм.</p>
        			  </div>
-         			<a href="#" class="btn">Подробнее</a>
+         			<a href="#" class="catalog-btn btn">Подробнее</a>
          			<table class="slider-table">
          				<tr class="col-1">
          					<td class="row-1">8,5 м</td>
@@ -161,9 +161,9 @@
          			</table>
       	    </div>
           <div class="catalog-radio">
-             <label tabindex="0" class="radio-button" for="btn-1"  aria-label="переключение к слайду Делай селфи, как Бэн Стиллер!"></label>
-             <label tabindex="0" class="radio-button" for="btn-2" aria-label="переключение к слайду Худеем правильно!"></label>
-             <label tabindex="0" class="radio-button" for="btn-3" aria-label="переключение к слайду Порхает как бабочка, жалит как пчела!"></label>
+             <label tabindex="0" class="radio-button" for="btn-1" aria-label="переключение к слайду Делай селфи, как Бэн Стиллер!">.</label>
+             <label tabindex="0" class="radio-button" for="btn-2" aria-label="переключение к слайду Худеем правильно!">.</label>
+             <label tabindex="0" class="radio-button" for="btn-3" aria-label="переключение к слайду Порхает как бабочка, жалит как пчела!">.</label>
           </div>
          </section>
       </div>
@@ -171,22 +171,22 @@
       <section class="popular-block">
       	<div class="popular-wrap">
       		<ul>
-                        <li>
+                        <li class="popular-item">
                             <a href="#">Виртуальная реальность</a>
                         </li>
-                        <li>
+                        <li class="popular-item">
                             <a href="#">Моноподы для селфи</a>
                         </li>
-                        <li>
+                        <li class="popular-item">
                             <a href="#">Экшн-камеры</a>
                         </li>
-                        <li>
+                        <li class="popular-item">
                             <a href="#">Фитнес-браслеты</a>
                         </li>
-                        <li>
+                        <li class="popular-item">
                             <a href="#">Умные часы</a>
                         </li>
-                        <li>
+                        <li class="popular-item">
                             <a href="#">Квадрокоптеры</a>
                         </li>
       		</ul>
@@ -197,7 +197,7 @@
       <div class="services-wrapper">
          <section class="services">
       			<ul class="services-list">
-                    <li ><label tabindex="0" for="btn-4">Доставка</label>
+              <li ><label tabindex="0" for="btn-4">Доставка</label>
       				</li>
       				<li ><label tabindex="0" for="btn-5">Гарантия</label>
       				</li>
