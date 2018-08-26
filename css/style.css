@@ -87,6 +87,9 @@ a {
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
+
+  background-color: transparent;
+  border: none;
 }
 
 .navigation-block input::-moz-placeholder {
@@ -196,7 +199,7 @@ a {
   letter-spacing: 0.2em;
 }
 
-.services ul li:nth-child(1) {
+.services-list li:nth-child(1) {
   color: #f7e184;
 }
 
@@ -461,3 +464,133 @@ a {
 .pagination {
   background-color: #ebebeb;
 }
+
+
+/*-----------------------------------------------------
+             Начало сетки
+-------------------------------------------------------*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+}
+
+.page-header,
+.page-main,
+.footer-top,
+.footer-middle,
+.footer-bottom {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+
+
+.page-header {
+  box-sizing: border-box;
+  padding: 0 60px;
+  padding-top: 35px;
+  margin-top: 40px;
+  min-height: 300px;
+
+  position: relative;
+}
+
+.main-logo {
+  position: absolute;
+  top: -17px;
+}
+
+.navigation-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation-top,
+.buyer-block,
+.main-navigation-list,
+.catalog-items {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+
+}
+
+.main-navigation-list {
+  margin-bottom: 53px;
+}
+
+.navigation-top {
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.search-block input {
+  padding-left: 39px;
+  height: 50px;
+}
+
+.user-block a {
+  padding-left: 27px; 
+  margin-left: 110px;
+}
+
+.buyer-block-compare a {
+  padding-left: 20px;
+}
+
+.buyer-block-basket a {
+  padding-left: 24px;
+  margin-left: 41px;
+}
+
+.catalog {
+  width: 230px;
+  padding-right: 16px;
+  margin-right: 294px;                                                    
+}
+
+.delivery {
+  margin-right: 38px;
+}
+.guarantee {
+  margin-right: 105px;
+}
+
+.catalog-items {
+  padding-top: 20px;
+}
+.catalog-items ul:first-child {
+  margin-right: 60px;
+}
+
+.catalog-items ul:nth-child(2) {
+  margin-right: 78px;
+}
+
+
+/*-----------------------------------------------------*/
+            /* Снимаю паддинги и маргины */
+
+.page-header ul,
+.page-header h1 {
+  margin: 0;
+  padding: 0;
+}
+
+/*-------------------------------------------------------*/
+
+/*-----------------------------------------------------*/
+            /* Частичная стилизация */
+.search-block button {
+  background-color: transparent;
+  border: none;
+}
+
+
+/*-------------------------------------------------------*/
