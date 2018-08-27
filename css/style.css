@@ -531,18 +531,11 @@ a {
   position: relative;
 }
 
-.navigation-block {
-  display: flex;
-  flex-direction: column;
-}
-
 .navigation-top,
 .buyer-block,
 .main-navigation-list,
 .catalog-items {
   display: flex;
-  flex-direction: row;
-  align-items: baseline;
 }
 
 .main-navigation-list {
@@ -551,6 +544,7 @@ a {
 
 .navigation-top {
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -605,22 +599,26 @@ a {
 ------------------------------------------------------------------------------*/
 
 .page-main {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   width: 1160px;
   margin: 0 auto;
   margin-bottom: 25px;
 }
 
 .catalog-wrapper {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  justify-content: flex-end;
   width: 1160px;
   min-height: 373px;
   margin-bottom: 85px;
+}
+
+
+.slider-page {
+  justify-content: space-between;
+  width: 1160px;
+}
+
+.slider-image,
+.slider-content {
+  width: 560px;
 }
 
 .popular-block {
@@ -634,9 +632,7 @@ a {
 
 .popular-wrap ul {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  flex-wrap: nowrap;
 }
 
 .services-wrapper {
@@ -679,13 +675,14 @@ a {
   margin-left: 40px;
 }
 
+.main-bottom-wrapper {
+  display: flex;
+}
 /*-----------------------------------------------------
              Footer
 -------------------------------------------------------*/
 
 .footer-wrapper {
-  display: flex;
-  flex-direction: column;
   width: 1160px;
   margin: 0 auto;
   padding: 65px 0;
@@ -731,7 +728,7 @@ a {
   margin-bottom: 45px;
 }
 
-.page-main-catalog {
+.catalog-wrapper-content {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -745,6 +742,7 @@ a {
   flex-direction: column;
   width: 1100px;
   padding-left: 60px;
+  margin: 0 auto;
 }
 
 .catalog-nav .catalog-name-breadcrumbs {
@@ -878,18 +876,18 @@ a {
   display: none;
 }
 
-#btn-1:checked ~ .catalog-wrapper .slide-1,
-#btn-2:checked ~ .catalog-wrapper .slide-2,
-#btn-3:checked ~ .catalog-wrapper .slide-3 {
-  display: block;
+#btn-1:checked ~ .catalog-slider-wrapper .slide-1,
+#btn-2:checked ~ .catalog-slider-wrapper .slide-2,
+#btn-3:checked ~ .catalog-slider-wrapper .slide-3 {
+  display: flex;
 }
 
 .services-slider {
   display:none;
 }
-#btn-4:checked ~ .services-wrapper .delivery-slide,
-#btn-5:checked ~ .services-wrapper .guarantee-slide,
-#btn-6:checked ~ .services-wrapper .credit-slide {
+#tab-1:checked ~ .services-slider-wrapper .delivery-slide,
+#tab-2:checked ~ .services-slider-wrapper .guarantee-slide,
+#tab-3:checked ~ .services-slider-wrapper .credit-slide {
   display: block;
 }
 /*-------------------Стилизация header--------------------------------------*/
@@ -906,19 +904,6 @@ a {
 
 .catalog-radio {
   align-self: flex-end;
-}
-.slider-title {
-  position: absolute;
-  top: -30px;
-}
-
-.slider-page {
-  width:560px;
-}
-.slider-image {
-  position: absolute;
-  left: 90px;
-  top: -100px;
 }
 
 .slider-description {
