@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
-<!-- проверка -->
    <header class="page-header">
 	   	<h1 class="visually-hidden">Device</h1>
 	   	<a class="main-logo">
@@ -17,8 +16,10 @@
 	   	<div class="navigation-block">
        		<div class="navigation-top">
       		   <form action="http://echo.htmlacademy.ru" method="GET" class="search-block">
-      			   <input type="search" name="search" placeholder="Поиск по сайту">
-      			   <button type="submit" aria-label="кнопка потвердить поиск"></button>
+      		   	   
+      			   <input class="search-block-input" type="search" name="search" placeholder="Поиск по сайту">
+      			   <button class="search-block-button" type="submit" aria-label="кнопка потвердить поиск" tabindex="0">Найти</button>
+      			   <span class="search-line"></span>
       		   </form>
       		   <div class="user-block">
       			   <a class="log-in" href="#">Войти</a>
@@ -47,43 +48,38 @@
        				       <a href="#">Контакты</a>
        			       </li>
        		   </ul>
-                <div class="catalog-items visually-hidden">
-                   <ul>
-                            <li>
-                                <a href="#">Виртуальная реальность</a>
-                            </li>
-                            <li>
-                                <a href="#">Моноподы для селфи</a>
-                            </li>
-                            <li>
-                                <a href="#">Экшн-камеры</a>
-                            </li>
-                   </ul>
-                   <ul>
-                            <li>
-                                <a href="#">Фитнес-браслеты</a>
-                            </li>
-                            <li>
-                                <a href="#">Умные часы</a>
-                            </li>
-                   </ul>
-                   <ul>
-                            <li>
-                                <a href="#">Квадрокоптеры</a>
-                            </li>
-                   </ul>
+       		   <div class="catalog-items-wrapper">
+	                <div class="catalog-items ">
+	                   <ul>
+	                            <li>
+	                                <a href="#">Виртуальная реальность</a>
+	                            </li>
+	                            <li>
+	                                <a href="#">Моноподы для селфи</a>
+	                            </li>
+	                            <li>
+	                                <a href="#">Экшн-камеры</a>
+	                            </li>
+	                   </ul>
+	                   <ul>
+	                            <li>
+	                                <a href="#">Фитнес-браслеты</a>
+	                            </li>
+	                            <li>
+	                                <a href="#">Умные часы</a>
+	                            </li>
+	                   </ul>
+	                   <ul>
+	                            <li>
+	                                <a href="#">Квадрокоптеры</a>
+	                            </li>
+	                   </ul>
+	                </div>
                 </div>
           </nav>
 	   	</div>
    </header>
    <main class="page-main">
-
-      <!-- Здесь радио-инпуты для двух слайдеров -->
-
-   	  <!-- <input type="radio" class="hidden-input" name="toggle-catalog" id="btn-1" checked>
-      <input type="radio" class="hidden-input" name="toggle-catalog" id="btn-2">
-      <input type="radio" class="hidden-input" name="toggle-catalog" id="btn-3"> -->
-
       <div class="catalog-wrapper">
         <section class="catalog-slider">
         	<input type="radio" class="hidden-input" name="toggle-catalog" id="btn-1" checked>
