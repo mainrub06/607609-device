@@ -1031,7 +1031,7 @@ a {
   background-image: url("../img/plus.svg");
   opacity: 0.3;
 }
-
+    /*здесь надо подумать*/
 .catalog-items {
   position: absolute;
   margin-top: 25px;
@@ -1048,9 +1048,68 @@ a {
   margin-right: 78px;
 }
 
-.item-catalog:hover ~ .catalog-items {
+.item-catalog:hover .catalog-items {
   display: flex;
 }
+
+
+
+/*Стилизация main*/
+
+.btn {
+  display: inline-block;
+  height: 40px;
+  background-color: red;
+  background-image: linear-gradient(to bottom, #fff 0, #fff 16px, #f4d361 17px, #f4d361 17px, #f0c52e 18px , #f0c52e 23px,  #f4d361 24px, #f4d361 24px, #fff 25px, #fff 25px);
+  vertical-align: middle;
+}
+
+.catalog-btn {
+  width: 174px;
+  height: 20px;
+  padding: 10px 23px;
+  padding-bottom: 11px;
+  padding-top: 9px;
+  margin-bottom: 50px;
+}
+.catalog-btn:hover {
+  background-image: linear-gradient(to bottom ,#f0c52e 0, #f0c52e 0, #f0c52e 40px, #f0c52e 40px);
+}
+
+
+.catalog-wrapper .slider-title {
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.slider-description {
+  margin-bottom: 40px;
+}
+
+.row-1,
+.row-2 {
+  display: inline-block;
+  margin-right: 78px;
+  padding: 0;
+}
+.row-1 {
+  margin-bottom: 5px;
+}
+
+.slider-description .description {
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1073,29 +1132,17 @@ a {
 
 /*---------------Стилизация каталога------------------*/
 
+.slider-image {
+  text-align: center;
+}
+
+
+
 .catalog-radio {
   align-self: flex-end;
 }
 
-.slider-description {
-  padding-top: 100px;
-  margin-bottom: 40px;
-}
 
-.slider-description .description {
-  padding-bottom: 10px;
-  padding-right: 60px;
-}
-
-.slider-page .catalog-btn {
- width: 220px;
- height: 40px;
-
-}
-
-.slider-table {
-  margin-top: 55px;
-}
 
 /*---------------Стилизация main------------------*/
 
