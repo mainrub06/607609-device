@@ -634,7 +634,6 @@ a {
 
 .services {
   display: flex;
-  justify-content: space-around;
   width: 1160px;
 }
 
@@ -1311,6 +1310,33 @@ a {
   opacity: 0.7;
 }*/
 
+.services {
+
+}
+
+.services-list {
+  width: 280px;
+}
+
+.services-slider-wrapper {
+  width: 560px;
+  padding-right: 320px;
+}
+
+.services-slider b {
+  margin-bottom: 36px;
+}
+
+
+
+
+
+
+
+
+
+
+
 .logotypes-list img {
   filter: grayscale(100%);
   opacity: 0.2; 
@@ -1561,6 +1587,9 @@ a {
   margin-top: -18px;
 }
 
+
+/*Здесь надо оживить иконки пользователя, корзины и сравнения.*/
+
 .buyer-block-item a {
   color: rgba(255,255,255, 0.7);
 }
@@ -1569,12 +1598,19 @@ a {
   color: white;
 }
 
+.buyer-block-item a:active {
+  color: rgba(255,255,255, 0.3);
+}
 
 
 
+.footer-services a:hover {
+  color: rgba(255,255,255, 0.6);
+}
 
-
-
+.footer-services a:active {
+  color: rgba(255,255,255, 0.3);
+}
 
 
 
