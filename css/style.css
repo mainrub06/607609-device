@@ -629,7 +629,7 @@ a {
 .services-wrapper {
   width: 1160px;
   margin-bottom: 85px;
-  padding: 80px 0 70px 20px;
+  padding: 57px 0 25px 20px;
 }
 
 .services {
@@ -1091,6 +1091,10 @@ a {
   vertical-align: middle;
 }
 
+.btn:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .catalog-btn {
   width: 174px;
   height: 20px;
@@ -1147,12 +1151,27 @@ a {
   height: 14px;
 }
 
-.radio-button-active {
+.radio-1:checked ~ .catalog-radio .radio-button-1 {
   background: url("../img/radio-on.svg") no-repeat;
   background-size: 14px 14px;
   width: 14px;
   height: 14px;
 }
+
+.radio-2:checked ~ .catalog-radio .radio-button-2 {
+  background: url("../img/radio-on.svg") no-repeat;
+  background-size: 14px 14px;
+  width: 14px;
+  height: 14px;
+}
+
+.radio-3:checked ~ .catalog-radio .radio-button-3 {
+  background: url("../img/radio-on.svg") no-repeat;
+  background-size: 14px 14px;
+  width: 14px;
+  height: 14px;
+}
+
 
 .slider-content {
   position: relative;
@@ -1211,7 +1230,7 @@ a {
   height: 160px;
   background-color: ;
   margin-top: 17px;
-  margin-bottom: 37px;
+  margin-bottom: 33px;
 }
 
 .popular-item:nth-child(1) a:before {
@@ -1310,27 +1329,144 @@ a {
   opacity: 0.7;
 }*/
 
+
+
+.services-wrapper {
+  padding-left: 0;
+}
+
 .services {
 
 }
 
-.services-list {
+.services .services-list {
   width: 280px;
+  position: relative;
+}
+
+.services-list::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 319px;
+  background-color: black;
+  top: -65px;
+  right:0;
+  margin-right: -2.5px; 
 }
 
 .services-slider-wrapper {
   width: 560px;
   padding-right: 320px;
+  padding-top: 8px;
+
 }
 
-.services-slider b {
-  margin-bottom: 36px;
+.services-slider-wrapper,
+.services-list {
+  min-height: 300px;
+}
+
+.services-slider {
+  position: relative;
+  padding-bottom: 75px;
+  padding-left: 120px;
+}
+
+.services-slider p {
+  margin-top: 30px;
+}
+
+.services-btn {
+  height: 20px;
+  padding-top: 9px;
+  padding-bottom: 11px;
+  width: 160px;
+  vertical-align: middle;
+  margin-top: 14px;
+  margin-bottom: 10px;
+}
+
+.services-btn:hover {
+  background-image: linear-gradient(to bottom ,#f0c52e 0, #f0c52e 0, #f0c52e 40px, #f0c52e 40px);
+}
+
+.delivery-slide::after,
+.guarantee-slide::after,
+.credit-slide::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.delivery-slide::after {
+  background: url("../img/delivery.svg") no-repeat;
+  width: 140px;
+  height: 165px;
+  top: 12px;
+  right: -255px;
+}
+
+.guarantee-slide::after {
+  background: url("../img/warranty.svg") no-repeat;
+  width: 172px;
+  height: 194px;
+  top: -5px;
+  right: -255px;
+}
+
+.credit-slide::after {
+  background: url("../img/credit.svg") no-repeat;
+  width: 158px;
+  height: 185px;
+  top: 0px;
+  right: -255px;
 }
 
 
+.input-services-delivery:checked ~ .services-list .services-btn-delivery,
+.services-list .services-btn-delivery:active {
+  background-image: linear-gradient(to right, #000 0, #000 261px);
+  text-align: left;
+  padding-left: 19px;
+  color: #f7e184;
+  width: 261px;
+}
 
+.input-services-guarantee:checked ~ .services-list .services-btn-guarantee,
+.services-list .services-btn-guarantee:active {
+  background-image: linear-gradient(to right, #000 0, #000 251px);
+  text-align: left;
+  padding-left: 29px;
+  color: #f7e184;
+  width: 251px;
+}
 
+.input-services-credit:checked ~ .services-list .services-btn-credit,
+.services-list .services-btn-credit:active {
+  background-image: linear-gradient(to right, #000 0, #000 238px);
+  text-align: left;
+  padding-left: 42px;
+  color: #f7e184;
+  width: 238px;
+}
 
+.services {
+  position: relative;
+}
+
+.services::after {
+  content: "";
+  position: absolute;
+  width: 1000%;
+  height: 288px;
+  left: -500%;
+  bottom: -15px;
+  background-image: linear-gradient(to right, #e5e5e5 0, #e5e5e5 0px);
+  background-image: linear-gradient(to left, #e5e5e5 0, #e5e5e5 0px);
+  z-index: -1;
+}
 
 
 
@@ -1352,10 +1488,6 @@ a {
   margin: 0;
   margin-bottom: 30px;
 }
-
-
-
-
 
 .about-us,
 .contacts {
