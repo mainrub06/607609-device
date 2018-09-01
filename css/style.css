@@ -1,3 +1,15 @@
+body {
+  margin: 0;
+  min-width: 1160px;
+}
+img {
+  max-width: 100%;
+}
+
+
+
+
+
 /* подключение шрифта */
 
 
@@ -554,7 +566,7 @@ a {
 
 .user-block a {
   padding-left: 27px;
-  margin-left: -15px; 
+  margin-left: -15px;
 
 }
 
@@ -901,7 +913,7 @@ a {
   top: 50%;
   left: 3px;
   margin-top: -8px;
-  background-image: url("../img/search.svg");  
+  background-image: url("../img/search.svg");
   background-repeat: no-repeat;
 }
 
@@ -915,7 +927,7 @@ a {
   padding: 0;
   right: -100px;
   bottom:0;
-  
+
 
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
@@ -933,7 +945,7 @@ a {
   background-color: black;
   bottom: 0px;
   left: 0px;
-  
+
   display: none;
 }
 
@@ -952,12 +964,12 @@ a {
 
 .search-block-input:focus ~ .search-block-button {
   display: block;
-} 
+}
 
 .search-block-input:focus ~ .search-line {
   display: block;
 
-} 
+}
 
 .user-block,
 .buyer-block-compare,
@@ -1372,7 +1384,7 @@ a {
   background-color: black;
   top: -65px;
   right:0;
-  margin-right: -2.5px; 
+  margin-right: -2.5px;
 }
 
 .services-slider-wrapper {
@@ -1491,12 +1503,12 @@ a {
 
 .logotypes-list img {
   filter: grayscale(100%);
-  opacity: 0.2; 
+  opacity: 0.2;
 }
 
 .logotypes-list img:hover {
   filter: none;
-  opacity: 1; 
+  opacity: 1;
 }
 
 .about-us p,
@@ -1575,7 +1587,7 @@ a {
 }
 
 
-/*              
+/*
           footer стилизация
 */
 
