@@ -850,19 +850,14 @@ a {
   flex-direction: column;
 }
 
-.range {
-  min-height: 140px;
-}
-
-.checkbox-color {
-  min-height: 285px;
-}
-
 .bluetooth-toggle {
   min-height: 150px;
   margin-bottom: 15px;
 }
 
+.bluetooth-toggle p {
+  margin-bottom: 23px;
+}
 
 
 
@@ -1884,11 +1879,13 @@ a {
 
 
 .filters-wrapper-big {
-  background-image: linear-gradient(to right, #dbdbdb 0, #dbdbdb 35%, #ebebeb 35%, #ebebeb 100%); 
+  /*background-image: linear-gradient(to right, #dbdbdb 0, #dbdbdb 35%, #ebebeb 35%, #ebebeb 100%); */
+  background-image: linear-gradient(to right, #dbdbdb 0%, #dbdbdb 50%, #ebebeb 50%, #ebebeb 100%);
 }
 
 .catalog-wrapper-big {
-  background-image: linear-gradient(to right, #efefef 0, #efefef 35%, #fff 35%, #fff 100%); 
+  /*background-image: linear-gradient(to right, #efefef 0, #efefef 35%, #fff 35%, #fff 100%); */
+  background-image: linear-gradient(to right ,#efefef 0%, #efefef 50%, #ffffff 50%, #ffffff 100%);
 }
 
 .slider-image {
@@ -1904,8 +1901,9 @@ a {
   display: none;
 }
 
-.catalog-wrapper-content {
+.catalog-goods {
   padding-bottom: 25px;
+  background-color: #fff;
 }
 
 .filters {
@@ -1921,6 +1919,7 @@ a {
   margin: 0;
   padding-left: 60px;
   padding-top: 25px;
+  background-color: #dbdbdb;
 }
 
 .filters .catalog-goods-sort {
@@ -1937,3 +1936,160 @@ a {
 .catalog-goods-sort ul {
   margin: 0;
 } 
+
+.catalog-goods-filter li:first-child {
+  padding-left: 12px;
+}
+
+.catalog-goods-grey {
+  padding-left: 28px;
+}
+
+.catalog-goods-sort .catalog-goods-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 41px;
+  height: 10px;
+  padding: 0;
+  margin-left: 232px;
+}
+
+.catalog-goods-buttons a {
+  display: block;
+}
+
+.catalog-goods-buttons li:nth-child(1) {
+  background: url("../img/icon-up-dir.svg") no-repeat;
+  background-size: 11px auto; 
+  width: 11px;
+  height: 10px;
+}
+
+.catalog-goods-buttons li:nth-child(2) {
+  background: url("../img/icon-down-dir.svg") no-repeat;
+  background-size: 11px auto; 
+  width: 11px;
+  height: 10px;
+}
+
+.range {
+  min-height: 70px;
+  margin-top: 70px;
+}
+
+.range,
+.checkbox-color,
+.bluetooth-toggle {
+  position: relative;
+  padding-top: 15px;
+}
+
+.checkbox-color {
+  margin-bottom: 34px;
+}
+
+.range::after,
+.checkbox-color::after,
+.bluetooth-toggle::after{
+  content: "";
+  position: absolute;
+  width: 201px;
+  height: 2px;
+  top: -1px;
+  left: -1px;
+  background-color: black;
+}
+
+.checkbox-color ul {
+  margin-top: 15px;
+}
+
+.checkbox-color label {
+  display: block;
+  cursor: pointer;
+  padding-left: 39px;
+}
+
+.checkbox-color li {
+  position: relative;
+
+  cursor: pointer;
+}
+
+.checkbox-buttons .checkbox-btn::before {
+  content: "";
+  position: absolute;
+  background: url("../img/checkbox-off.svg") no-repeat;
+  background-size: 23px 23px;
+  width: 23px;
+  height: 23px;
+  left: 0;
+  top: 50%;
+  margin-top: -11.5px;
+  cursor: pointer;
+}
+
+.checkbox-input:checked + .checkbox-btn::before {
+  content: "";
+  position: absolute;
+  background: url("../img/checkbox-on.svg") no-repeat;
+  background-size: 27px auto;
+  width: 26px;
+  height: 23px;
+  left: 0;
+  top: 50%;
+  margin-top: -11.5px;
+}
+
+
+.toggle-buttons label {
+  position: relative;
+  display: block;
+  padding-left: 38px;
+  cursor: pointer;
+}
+
+.toggle-buttons label::before {
+  content: "";
+  position: absolute;
+  background: url("../img/radio-off.svg") no-repeat;
+  background-size: 25px auto;
+  width: 25px;
+  height: 25px;
+  left: -2px;
+  top: 50%;
+  margin-top: -12.5px;
+}
+
+.toggle-buttons input[type="radio"]:checked + label::before {
+  content: "";
+  position: absolute;
+  background: url("../img/radio-on.svg") no-repeat;
+  background-size: 25px auto;
+  width: 25px;
+  height: 25px;
+  left: -2px;
+  top: 50%;
+  margin-top: -12.5px;
+}
+
+.form-submit {
+  background-image: linear-gradient(to bottom, #efefef 0, #efefef 16px, #f4d361 17px, #f4d361 17px, #f0c52e 18px , #f0c52e 23px,  #f4d361 24px, #f4d361 24px, #efefef 25px, #efefef 25px);
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+
+
+
+/*.catalog-btn {
+  width: 174px;
+  height: 20px;
+  padding: 10px 23px;
+  padding-bottom: 11px;
+  padding-top: 9px;
+  margin-bottom: 50px;
+}*/
+.form-submit:hover {
+  background-image: linear-gradient(to bottom ,#f0c52e 0, #f0c52e 0, #f0c52e 40px, #f0c52e 40px);
+}

@@ -133,37 +133,45 @@
             <section class="catalog-filter">
                <form action="http://echo.htmlacademy.ru" method="POST" class="catalog-filter-form">
                 
-                <div class="range">
+                  <div class="range">
                     <p><b>Стоимость</b></p>
                     <!-- здесл будет двойной ползунок   -->
                   </div>
                   <div class="checkbox-color">
                     <p><b>Цвет</b></p>
-                    <div class="checkbox-inputs visually-hidden">
-                        <input id="black" type="checkbox" name="color-black">
-                        <input id="white" type="checkbox" name="color-white">
-                        <input id="blue" type="checkbox" name="color-blue">
-                        <input id="red" type="checkbox" name="color-red">
-                        <input id="pink" type="checkbox" name="color-pink">
-                    </div>
-                    <ul>
-                        <li><label for="black">Чёрный</label></li>
-                        <li><label for="white">Белый</label></li>
-                        <li><label for="blue">Синий</label></li>
-                        <li><label for="red">Красный</label></li>
-                        <li><label for="pink">Розовый</label></li>
+                    <ul class="checkbox-buttons">
+                        <li>
+                           <input class="checkbox-input visually-hidden" id="black" type="checkbox" name="color-black" checked>
+                           <label class="checkbox-btn" for="black">Чёрный</label>
+                        </li>
+                        <li>
+                           <input class="checkbox-input visually-hidden" id="white" type="checkbox" name="color-white">
+                           <label class="checkbox-btn" for="white">Белый</label>
+                        </li>
+                        <li>
+                           <input class="checkbox-input visually-hidden" id="blue" type="checkbox" name="color-blue" checked>
+                           <label class="checkbox-btn" for="blue">Синий</label>
+                        </li>
+                        <li>
+                           <input class="checkbox-input visually-hidden" id="red" type="checkbox" name="color-red" checked>
+                           <label class="checkbox-btn" for="red">Красный</label>
+                        </li>
+                        <li>
+                           <input class="checkbox-input visually-hidden" id="pink" type="checkbox" name="color-pink">
+                           <label class="checkbox-btn" for="pink">Розовый</label>
+                        </li>
                     </ul>
                   </div>
                   <div class="bluetooth-toggle">
                     <p><b>Bluetooth</b></p>
-                    <div class="toggles visually-hidden">
-                      <input id="toggle-yes" type="radio" name="bluetooth">
-                      <input id="toggle-no" type="radio" name="bluetooth">
+                    <div class="toggle-buttons">
+                          <input class="visually-hidden" id="toggle-yes" type="radio" name="bluetooth" checked>
+                          <label for="toggle-yes">Есть</label>
+                          <input class="visually-hidden" id="toggle-no" type="radio" name="bluetooth">
+                          <label for="toggle-no">Нет</label>
                     </div>
-                    <label for="toggle-yes">Есть</label>
-                    <label for="toggle-no">Нет</label>
                   </div>
-                  <button class="btn" type="submit">Показать</button>
+                  <button class="btn form-submit" type="submit">Показать</button>
                </form>
             </section>
             <section class="catalog-goods">
