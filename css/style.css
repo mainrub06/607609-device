@@ -815,12 +815,7 @@ a {
 .catalog-goods-grey {
   padding-left: 30px;
 }
-.catalog-goods .catalog-goods-list {
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding-top: 50px;
-  padding-left: 30px;
-}
+
 .catalog-goods-item {
   width: 360px;
   height: 460px;
@@ -1896,11 +1891,6 @@ a {
   align-self: flex-end;
 }
 
-
-.catalog-goods-hover {
-  display: none;
-}
-
 .catalog-goods {
   padding-bottom: 25px;
   background-color: #fff;
@@ -2079,17 +2069,80 @@ a {
   padding-top: 10px;
 }
 
-
-
-
-/*.catalog-btn {
-  width: 174px;
-  height: 20px;
-  padding: 10px 23px;
-  padding-bottom: 11px;
-  padding-top: 9px;
-  margin-bottom: 50px;
-}*/
 .form-submit:hover {
   background-image: linear-gradient(to bottom ,#f0c52e 0, #f0c52e 0, #f0c52e 40px, #f0c52e 40px);
 }
+
+
+
+
+
+/*Стилизация Catalog-Goods*/
+
+
+
+
+.catalog-goods .catalog-goods-list {
+  flex-wrap: wrap;
+  padding-top: 55px;
+  padding-left: 32px;
+}
+
+.catalog-goods-item {
+  position: relative;
+  margin-bottom: 33px;
+  margin-left: 40px;
+  margin-top: 15px;
+}
+.catalog-goods-price {
+  width: 100px;
+  text-align: right;
+}
+
+.catalog-goods-container {
+  display: flex;
+  width: 360px;
+  justify-content: space-between;
+  margin-top: 28px;
+}
+
+.catalog-goods-name {
+  width: 260px;
+}
+
+.pagination {
+  margin-left: 72px;
+}
+
+.catalog-goods-hover {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 360px;
+  height: 380px;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.catalog-goods-buy {
+  padding: 10px 35px;
+  height: 20px;
+  width: 130px;
+  margin-bottom: 7.5px;
+}
+
+.catalog-goods-hover .catalog-goods-grey {
+  padding: 0;
+}
+  
+
+.catalog-goods-image:hover ~ .catalog-goods-hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
