@@ -2139,7 +2139,7 @@ a {
 }
   
 
-.catalog-goods-image:hover ~ .catalog-goods-hover {
+.catalog-image-wrapper:hover ~ .catalog-goods-hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
