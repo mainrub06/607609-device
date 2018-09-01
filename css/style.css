@@ -1639,7 +1639,7 @@ a {
   position: relative;
 }
 
-.buyer-block-item:nth-child(1) a::before {
+.buyer-block-item:nth-of-type(1) a::before {
   content: "";
   position: absolute;
   background: url("../img/user-footer.svg") no-repeat;
@@ -1651,7 +1651,7 @@ a {
   height: 12px;
 }
 
-.buyer-block-item:nth-child(2) a::before {
+.buyer-block-item:nth-of-type(2) a::before {
   content: "";
   position: absolute;
   background: url("../img/compare-footer.svg") no-repeat;
@@ -1663,7 +1663,7 @@ a {
   height: 10px;
 }
 
-.buyer-block-item:nth-child(3) a::before {
+.buyer-block-item:nth-of-type(3) a::before {
   content: "";
   position: absolute;
   background: url("../img/cart-footer.svg") no-repeat;
@@ -2110,16 +2110,12 @@ a {
   width: 260px;
 }
 
-.pagination {
-  margin-left: 72px;
-}
-
 .catalog-goods-hover {
+  position: absolute;
   display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
   width: 360px;
   height: 380px;
   top: 0;
@@ -2134,6 +2130,10 @@ a {
   margin-bottom: 7.5px;
 }
 
+.catalog-goods-buy:hover {
+  background-image: linear-gradient(to bottom ,#f0c52e 0, #f0c52e 0, #f0c52e 40px, #f0c52e 40px);
+}
+
 .catalog-goods-hover .catalog-goods-grey {
   padding: 0;
 }
@@ -2145,4 +2145,161 @@ a {
   justify-content: center;
 }
 
+.catalog-goods-item:last-child::before {
+  content: "new";
+  display: flex;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  opacity: 0.2;
 
+  top: 29px;
+  right: 27px;
+
+  justify-content: center;
+  align-items: center;
+  font-family: "Gilroy", "Verdana", sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+
+
+
+
+.pagination {
+  margin-left: 72px;
+}
+
+.pagination-list {
+  padding-top: 26px;
+  padding-bottom: 25px;
+}
+
+.pages {
+  margin: 0 15px;
+}
+
+
+
+
+/*------------------footer------------*/
+/*.inner-page .footer-top {
+  justify-content: stretch;
+}
+
+.inner-page .log-in {
+  padding-left: 20px; 
+}
+
+.footer-top .footer-buyer-block {
+  margin-left: auto;
+}
+
+
+.buyer-block-item:nth-of-type(1) a::before {
+  content: "";
+  position: absolute;
+  background: url("../img/user-footer.svg") no-repeat;
+  background-size: 13px auto;
+  left: 0;
+  top: 50%;
+  margin-top: -6px;
+  width: 13px;
+  height: 12px;
+}
+
+.buyer-block-item:nth-of-type(2) a::before {
+  content: "";
+  position: absolute;
+  background: url("../img/compare-footer.svg") no-repeat;
+  background-size: 10px auto;
+  left: 0;
+  top: 50%;
+  margin-top: -5px;
+  width: 10px;
+  height: 10px;
+}
+
+.buyer-block-item:nth-of-type(3) a::before {
+  content: "";
+  position: absolute;
+  background: url("../img/cart-footer.svg") no-repeat;
+  background-size: 12px auto;
+  left: 0;
+  top: 50%;
+  margin-top: -6px;
+  width: 12px;
+  height: 12px;
+}
+*/
+
+.footer-buyer-catalog {
+  justify-content:  flex-end;
+  width: 480px;
+  margin-left: auto;
+}
+
+.buyer-catalog-item:nth-child(1) a {
+  padding-left: 27px; 
+}
+
+.buyer-catalog-item:nth-child(3) a {
+  padding-left: 0px; 
+  margin-left: 20px;
+}
+
+.buyer-catalog-item:nth-child(3) a {
+  padding-left: 20px; 
+  margin-left: 44px;
+}
+
+.buyer-catalog-item:nth-child(4) a {
+  padding-left: 24px;
+  margin-left: 41px; 
+}
+
+
+.buyer-catalog-item:nth-of-type(1) a::before {
+  content: "";
+  position: absolute;
+  background: url("../img/user-footer.svg") no-repeat;
+  background-size: 13px auto;
+  left: 0;
+  top: 50%;
+  margin-top: -6px;
+  width: 13px;
+  height: 12px;
+}
+.buyer-catalog-item:nth-of-type(2) a::before {
+  display: none;
+}
+
+.buyer-catalog-item:nth-of-type(3) a::before {
+  content: "";
+  position: absolute;
+  background: url("../img/compare-footer.svg") no-repeat;
+  background-size: 10px auto;
+  left: 44px;
+  top: 50%;
+  margin-top: -5px;
+  width: 10px;
+  height: 10px;
+}
+
+.buyer-catalog-item:nth-of-type(4) a::before {
+  content: "";
+  position: absolute;
+  background: url("../img/cart-footer.svg") no-repeat;
+  background-size: 12px auto;
+  left: 41px;
+  top: 50%;
+  margin-top: -6px;
+  width: 12px;
+  height: 12px;
+}
