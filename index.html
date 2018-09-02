@@ -41,26 +41,26 @@
 				                <div class="catalog-items ">
 				                   <ul>
 				                            <li>
-				                                <a href="#">Виртуальная реальность</a>
+				                                <a href="catalog.html">Виртуальная реальность</a>
 				                            </li>
 				                            <li>
 				                                <a href="catalog.html">Моноподы для селфи</a>
 				                            </li>
 				                            <li>
-				                                <a href="#">Экшн-камеры</a>
+				                                <a href="catalog.html">Экшн-камеры</a>
 				                            </li>
 				                   </ul>
 				                   <ul>
 				                            <li>
-				                                <a href="#">Фитнес-браслеты</a>
+				                                <a href="catalog.html">Фитнес-браслеты</a>
 				                            </li>
 				                            <li>
-				                                <a href="#">Умные часы</a>
+				                                <a href="catalog.html">Умные часы</a>
 				                            </li>
 				                   </ul>
 				                   <ul>
 				                            <li>
-				                                <a href="#">Квадрокоптеры</a>
+				                                <a href="catalog.html">Квадрокоптеры</a>
 				                            </li>
 				                   </ul>
 				                </div>
@@ -95,8 +95,8 @@
 	      			    <div class="slider-content">
 			      			    <p class="slider-title"><b>Делай селфи,<br> как Бен Стиллер!</b></p>
 			      			    <div class="slider-description">
-			         				<p class="description">Самая длиная палка для селфи доступна в нашем магазине.</p>
-			         				<p class="description">Восемь(Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+			         				<p class="description">Самая длинная палка для селфи доступна в нашем магазине.</p>
+			         				<p class="description">Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 			       			    </div>
 			         			<a href="#" class="catalog-btn btn">Подробнее</a>
 			         			<table class="slider-table">
@@ -179,7 +179,7 @@
                             <a href="#">Виртуальная реальность</a>
                         </li>
                         <li class="popular-item">
-                            <a href="#">Моноподы для селфи</a>
+                            <a href="#">Моноподы<br> для селфи</a>
                         </li>
                         <li class="popular-item">
                             <a href="#">Экшн-камеры</a>
@@ -254,7 +254,11 @@
 		  <section class="contacts">
 		  	 <h2>Контакты</h2>
 		     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-		     <img class="mini-map" src="img/mini-map.png" width="560" height="222" alt="Карта">
+		     <div class="mini-map">
+		     	<img src="img/mini-map.png" width="560" height="222" alt="Карта">
+			    <iframe class="mini-map-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473654!2d37.52742931606065!3d55.68703400452984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sua!4v1535893941389" width="560" height="222" frameborder="0" style="border:0" allowfullscreen></iframe>
+		     </div>
+		     
 		     <a href="#" class="contacts-btn btn">Напишите нам</a>
 		  </section>
       </div>
@@ -274,9 +278,9 @@
 		      <div class="footer-middle">
 		         <p class="footer-adress">г. Москва, ул. Строителей, 15</p>
 		         <ul class="footer-services">
-		          <li><a href="#">Доставка</a></li>
-		          <li><a href="#">Гарантия</a></li>
-		          <li><a href="#">Контакты</a></li>
+		          <li class="footer-services-item"><a href="#">Доставка</a></li>
+		          <li class="footer-services-item"><a href="#">Гарантия</a></li>
+		          <li class="footer-services-item"><a href="#">Контакты</a></li>
 		         </ul>
 		         <p class="footer-number">Тел.: +7 (495) 495-95-95</p>
 		      </div>
@@ -286,25 +290,41 @@
 		            <a class="inst-icon" href="http://instagram.com" aria-label="наша страничка в инстаграме"></a>
 		            <a class="twit-icon" href="http://twitter.com" aria-label="наша страничка в твиттере"></a>
 		         </div>
+		         <div class="html-academy-logo">
+		         	<a href="https://htmlacademy.ru/intensive/htmlcss">
+		         		<img src="img/logo-html.svg" alt="html-academy" width="27" height="35">
+		         	</a>
+		         </div>
 		      </div>
       </div>
    </footer>
 
-   <div class="feedback visually-hidden">
+   <div class="feedback">
    	   <div class="feedback-close"><a href="#" aria-label="закрыть форму обратной связи"></a></div>
   	   <form class="feedback-form" action="http://echo.htmlacademy.ru" method="POST">
-  		   	<label for="form-name"><b>Ваше имя:</b></label>
-  		   	<input id="form-name" type="text" name="name" placeholder="Имя Фамилия">
-  		   	<label for="form-email"><b>Ваш e-mail:</b></label>
-  		   	<input id="form-email" type="text" name="email" placeholder="email@example.com">
+  		   	<div class="feedback-container">
+  		   		<div>
+  		   			<label for="form-name">
+		  		   		<b>Ваше имя:</b>
+		  		   		<input id="form-name" type="text" name="name" placeholder="Имя Фамилия">
+	  		   	    </label>
+	  		   	</div>     		   	
+  		   	    <div>
+  		   	    	<label for="form-email">
+		  		   		<b>Ваш e-mail:</b>
+		  		   		<input id="form-email" type="text" name="email" placeholder="email@example.com">
+	  		   	    </label>
+	  		   	</div>    
+  		   	</div>
   		   	<label for="form-massage"><b>Текст письма:</b></label>
   		   	<textarea name="massage" id="form-massage" cols="30" rows="10" placeholder="В свободной форме"></textarea>
   		   	<button class="form-btn btn" type="submit">Отправить</button>
   	   </form>
    </div>
-   <div class="map-popup visually-hidden">
+   <div class="map-popup">
       <div class="map-popup-close"><a href="#" aria-label="Закрыть карту"></a></div>
       <img src="img/map-big.png" width="960" height="559" alt="Наше расположение" class="map-popup-image">
+      <iframe class="map-big" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473654!2d37.52742931606065!3d55.68703400452984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sua!4v1535893941389" width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
    </div>
 
   </body>
