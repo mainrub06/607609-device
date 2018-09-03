@@ -647,10 +647,6 @@ a {
   margin: 0 auto;
 }
 
-.services-wrapper {
-
-}
-
 .slider-page {
   justify-content: space-between;
 }
@@ -659,9 +655,11 @@ a {
 .slider-content {
   width: 560px;
 }
+
 .slider-image {
   min-height: 490px;
 }
+
 .popular-block {
   width: 1160px;
   margin-bottom: 85px;
@@ -762,8 +760,6 @@ a {
   width: 440px;
 }
 
-
-
 /*-----------------------------------------------------*/
             /* Снимаю паддинги и маргины */
 
@@ -777,14 +773,9 @@ a {
   padding: 0;
 }
 
-
-
-
 /*-----------------------------------------------------
              Начало сетки Catalog
 -------------------------------------------------------*/
-
-
 
 .inner-page .page-header {
   min-height: 185px;
@@ -873,35 +864,6 @@ a {
 .pagination-item:nth-child(5) a {
   margin-left: 178px;
   padding: 26px 30px 22px 32px;
-}
-
-.pagination-item:nth-child(1) a:hover,
-.pagination-item:nth-child(5) a:hover {
-  background-color: #d9d9d9;
-}
-
-.pagination-item:nth-child(1) a:active,
-.pagination-item:nth-child(5) a:active {
-  background-color: #d9d9d9;
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.pagination-item:nth-child(2) a,
-.pagination-item:nth-child(3) a,
-.pagination-item:nth-child(4) a {
-  padding: 26px 15px 22px 15px;
-}
-
-.pagination-item:nth-child(2) a:hover,
-.pagination-item:nth-child(3) a:hover,
-.pagination-item:nth-child(4) a:hover {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.pagination-item:nth-child(2) a:active,
-.pagination-item:nth-child(3) a:active,
-.pagination-item:nth-child(4) a:active {
-  color: black;
 }
 
 .catalog-filter-form {
@@ -2177,7 +2139,7 @@ a {
   cursor: pointer;
 }
 
-.checkbox-buttons .checkbox-btn::before {
+.checkbox-buttons .checkbox-btn::after {
   content: "";
   position: absolute;
   background: url("../img/checkbox-off.svg") no-repeat;
@@ -2190,7 +2152,7 @@ a {
   cursor: pointer;
 }
 
-.checkbox-input:checked + .checkbox-btn::before {
+.checkbox-input:checked + .checkbox-btn::after {
   content: "";
   position: absolute;
   background: url("../img/checkbox-on.svg") no-repeat;
@@ -2202,6 +2164,35 @@ a {
   margin-top: -11.5px;
 }
 
+.checkbox-off:hover .checkbox-btn::after {
+  opacity: 0.6;
+}
+
+.checkbox-off:active .checkbox-btn::after {
+  content: "";
+  position: absolute;
+  background: url("../img/checkbox-on.svg") no-repeat;
+  background-size: 27px auto;
+  width: 26px;
+  height: 23px;
+  left: 0;
+  top: 50%;
+  margin-top: -11.5px;
+  opacity: 1;
+}
+
+.checkbox-buttons .checkbox-btn::after {
+  content: "";
+  position: absolute;
+  background: url("../img/checkbox-off.svg") no-repeat;
+  background-size: 23px 23px;
+  width: 23px;
+  height: 23px;
+  left: 0;
+  top: 50%;
+  margin-top: -11.5px;
+  cursor: pointer;
+}
 
 .toggle-buttons label {
   position: relative;
@@ -2366,6 +2357,35 @@ a {
 
 .pagination-item a {
   display: block;
+}
+
+.pagination-item:nth-child(1) a:hover,
+.pagination-item:nth-child(5) a:hover {
+  background-color: #d9d9d9;
+}
+
+.pagination-item:nth-child(1) a:active,
+.pagination-item:nth-child(5) a:active {
+  background-color: #d9d9d9;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination-item:nth-child(2) a,
+.pagination-item:nth-child(3) a,
+.pagination-item:nth-child(4) a {
+  padding: 26px 15px 22px 15px;
+}
+
+.pagination-item:nth-child(2) a:hover,
+.pagination-item:nth-child(3) a:hover,
+.pagination-item:nth-child(4) a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.pagination-item:nth-child(2) a:active,
+.pagination-item:nth-child(3) a:active,
+.pagination-item:nth-child(4) a:active {
+  color: black;
 }
 
 
@@ -2692,6 +2712,8 @@ a {
 .breadcrumbs-item a:hover {
   color: rgba(0, 0, 0, 0.6);
 }
+
 .breadcrumbs-item a:active {
   color: rgba(0, 0, 0, 0.1);
 }
+
