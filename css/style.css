@@ -2688,3 +2688,10 @@ a {
 .footer-top a:first-of-type:active {
   opacity: 0.3;
 }
+
+.breadcrumbs-item a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+.breadcrumbs-item a:active {
+  color: rgba(0, 0, 0, 0.1);
+}
