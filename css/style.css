@@ -617,7 +617,7 @@ a {
 }
 
 .item-guarantee {
-  margin-right: 109px;
+  margin-right: 105px;
 }
 
 
@@ -1131,7 +1131,7 @@ a {
   padding-left: 60px;
   padding-top: 20px;
   width: 1100px;
-  min-height: 141px;
+  min-height: 143px;
   background-color: #f7e296;
   display: none;
   z-index: 5;
@@ -1192,6 +1192,11 @@ a {
 
 .slider-description {
   margin-bottom: 43px;
+}
+
+.col-1,
+.col-2 {
+  display: flex;
 }
 
 .row-1,
@@ -1277,7 +1282,7 @@ a {
   color: white;
   top: -15px;
   right: 49px;
-  z-index: 0;
+  z-index: -1;
 }
 
 .slide-2 .slider-content::before {
@@ -1290,7 +1295,7 @@ a {
   color: white;
   top: -12px;
   right: 50px;
-  z-index: 0;
+  z-index: -1;
 }
 
 .slide-3 .slider-content::before {
@@ -1908,7 +1913,7 @@ a {
 }
 
 .html-academy-logo {
-  margin-left: auto;
+  margin-left: 473px;
 }
 
 .html-academy-logo a {
@@ -1981,6 +1986,7 @@ a {
 }
 .inner-page .user-name {
   margin-right: 20px;
+
 }
 
 .catalog-nav .catalog-name-breadcrumbs {
@@ -2427,7 +2433,7 @@ a {
 
 .buyer-catalog-item:nth-child(3) a {
   padding-left: 20px;
-  margin-right: 41px;
+  margin-right: 40px;
 }
 
 .buyer-catalog-item:nth-child(4) a {
@@ -2785,7 +2791,7 @@ a {
 }
 
 .slider-title-wrapper {
-  padding-right: 167px;
+  padding-right: 163px;
 }
 
 .slide-3 .slider-title-wrapper {
