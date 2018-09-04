@@ -275,11 +275,16 @@ a {
   letter-spacing: 0.01em;
 }
 
-.page-footer p {
+.page-footer p,
+.footer-number {
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
+}
+
+.footer-number {
+  letter-spacing: 0;
 }
 
 .footer-services ul {
@@ -2603,9 +2608,8 @@ a {
   position: fixed;
   width: 960px;
   top: 50%;
-  margin-top: -250px;
   left: 50%;
-  margin-left: -480px;
+  transform: translate(-50%, -50%);
   background-color: white;
   z-index: 5;
   padding: 78px 100px;
@@ -2798,3 +2802,12 @@ a {
   padding-right: 40px;
 }
 
+.footer-number {
+  margin-top: 13px;
+  margin-bottom: 0px;
+
+}
+
+.modal-show {
+  display: block;
+}
