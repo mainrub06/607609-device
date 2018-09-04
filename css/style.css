@@ -2479,8 +2479,8 @@ a {
   z-index: 1;
 }
 
-.range-custom div:first-child::after,
-.range-custom div:last-child::before {
+.range-custom button:first-child::after,
+.range-custom button:last-child::before {
   content: "";
   position: absolute;
   background: url("../img/filter-button.svg") no-repeat;
