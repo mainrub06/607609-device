@@ -22,7 +22,7 @@
                </form>
                <div class="user-block">
                   <a href="#" class="user-name">Валентин Петухов</a>
-                  <a href="#" class="log-in grey-style">Выйти</a>
+                  <a href="#" class="grey-style">Выйти</a>
                </div>
                <ul class="buyer-block">
                   <li class="buyer-block-compare">
@@ -135,8 +135,12 @@
                   <div class="range">
                     <p><b>Стоимость</b></p>
                     <div class="range-custom">
-                       <button></button>
-                       <button></button>
+                       <button class="circle-left" id="custom-left"></button>
+                       <button class="circle-right" id="custom-right"></button>
+                       <label class="custom-label-left" for="custom-left">от</label>
+                       <label class="custom-label-right" for="custom-right">до</label>
+                       <input class="custom-left-value" type="text" value="0">
+                       <input class="custom-right-value" type="text" value="5000">
                     </div>
                   </div>
                   <div class="checkbox-color">
@@ -201,7 +205,7 @@
                         </div>
                      </div>
                      <div class="catalog-goods-container">
-                           <a href="#" class="catalog-goods-name">Профессиональная <br> селфи-палка</a>
+                           <a href="#" class="catalog-goods-name">Профессиональная&nbsp; &nbsp; &nbsp; селфи-палка</a>
                            <p class="catalog-goods-price">1 500 руб.</p>
                      </div>
 
@@ -220,7 +224,7 @@
                      </div>
 
                   </li>
-                  <li class="catalog-goods-item">
+                  <li class="catalog-goods-item catalog-goods-new">
                      <div class="catalog-image-wrapper">
                         <img src="img/item-4.jpg" width="360" height="380" alt="селфи-палка" class="catalog-goods-image">
                         <div class="catalog-goods-hover">
