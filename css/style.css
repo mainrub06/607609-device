@@ -728,11 +728,15 @@ a {
              Footer
 -------------------------------------------------------*/
 
+.page-footer {
+  margin-bottom: 0px;
+}
+
 .footer-wrapper {
   width: 1160px;
   margin: 0 auto;
   padding: 65px 0;
-
+  margin-bottom: 0px;
 }
 
 .footer-top,
