@@ -2722,3 +2722,31 @@ a {
 .search-block-input:focus {
   outline: none;
 }
+
+@keyframes shift {
+  from {
+    background-image: linear-gradient(to bottom, transparent 0, transparent 16px, #f4d361 17px, #f4d361 17px, #f0c52e 18px, #f0c52e 23px, #f4d361 24px, #f4d361 24px, transparent 25px, transparent 25px);
+  }
+
+  50% {
+    background-image: linear-gradient(to bottom, transparent 0, transparent 10px, #f4d361 11px, #f4d361 11px, #f0c52e 12px, #f0c52e 29px, #f4d361 30px, #f4d361 30px, transparent 31px, transparent 31px);
+  }
+
+  to {
+    background-image: linear-gradient(to bottom, #f4d361 0px, #f4d361 1px, #f0c52e 1px, #f0c52e 39px, #f4d361 40px, #f4d361 40px;
+  }
+}
+
+@keyframes shake {
+  from {
+
+  50% {
+
+  }
+
+  to {
+
+  }
+}
+
+
