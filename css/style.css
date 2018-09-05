@@ -1205,6 +1205,7 @@ a {
   background-size: 12px 12px;
   width: 12px;
   height: 12px;
+  cursor: pointer;
 }
 
 .radio-1:checked~.catalog-radio .radio-button-1 {
@@ -2528,6 +2529,9 @@ a {
   padding: 78px 100px;
   box-sizing: border-box;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+
+  animation-name: popup;
+  animation-duration: 0.8s;
 }
 
 .feedback-close {
@@ -2597,12 +2601,14 @@ a {
   width: 960px;
   height: 559px;
   top: 50%;
-  margin-top: -279.5px;
   left: 50%;
-  margin-left: -480px;
+  transform: translate(-50%, -50%);
   z-index: 5;
   background-color: white;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+
+  animation-name: popup;
+  animation-duration: 0.9s;
 }
 
 .map-popup-close {
@@ -2717,6 +2723,7 @@ a {
 
 .modal-show {
   display: block;
+
 }
 
 .search-block-input:focus {
@@ -2733,20 +2740,24 @@ a {
   }
 
   to {
-    background-image: linear-gradient(to bottom, #f4d361 0px, #f4d361 1px, #f0c52e 1px, #f0c52e 39px, #f4d361 40px, #f4d361 40px;
+    background-image: linear-gradient(to bottom, #f4d361 0px, #f4d361 1px, #f0c52e 1px, #f0c52e 39px, #f4d361 40px, #f4d361 40px);
   }
 }
 
-@keyframes shake {
-  from {
+@keyframes popup {
+  0% {
+    transform: translate(-50%, 100%);
+    opacity: 0.5;
+  }
 
   50% {
-
+    transform: translate(-50%, -65%);
+    opacity: 0.8;
   }
 
-  to {
-
+  100% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
   }
 }
-
 
