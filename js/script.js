@@ -9,14 +9,14 @@ var popupMap = document.querySelector(".map-popup");
 
 
 link.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.add("modal-show");
-    focusName.focus();
+  evt.preventDefault();
+  popup.classList.add("modal-show");
+  focusName.focus();
 });
 
 linkClose.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
+  evt.preventDefault();
+  popup.classList.remove("modal-show");
 });
 
 linkMap.addEventListener("click", function (evt) {

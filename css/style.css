@@ -721,6 +721,10 @@ a {
   justify-content: flex-start;
 }
 
+.inner-page .footer-top {
+  margin-bottom: 10px;
+}
+
 .footer-top {
   margin-bottom: 7px;
 }
@@ -1697,7 +1701,7 @@ a {
   justify-content: space-between;
   list-style: none;
   margin-top: -5px;
-  padding-top: 2px;
+  padding-top: 4px;
 }
 
 .footer-buyer-block a:nth-child(1) {
@@ -1890,7 +1894,6 @@ a {
 }
 
 /*---------------Стилизация каталога------------------*/
-
 .inner-page .page-header {
   padding-top: 31px;
 }
@@ -2581,6 +2584,7 @@ a {
   padding-left: 34px;
   padding-right: 34px;
   background-image: linear-gradient(to bottom, #fff 0, #fff 16px, #f4d361 17px, #f4d361 17px, #f0c52e 18px, #f0c52e 23px, #f4d361 24px, #f4d361 24px, #fff 25px, #fff 25px);
+  height: 40px;
 }
 
 .form-btn:hover {
@@ -2705,6 +2709,10 @@ a {
 .footer-number {
   margin-top: 13px;
   margin-bottom: 0px;
+}
+
+.inner-page .footer-number {
+  margin-top: 11px;
 }
 
 .modal-show {
