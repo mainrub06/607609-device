@@ -2,7 +2,9 @@ var link = document.querySelector(".contacts-btn");
 var linkClose = document.querySelector(".feedback-close");
 var popup = document.querySelector(".feedback");
 var focusName = popup.querySelector("input[name=name]");
-var rangeOff = document.querySelector(".range-js");
+var linkMap = document.querySelector(".modal-map");
+var linkMapClose = document.querySelector(".map-popup-close");
+var popupMap = document.querySelector(".map-popup");
 
 
 
@@ -17,6 +19,12 @@ linkClose.addEventListener("click", function (evt) {
     popup.classList.remove("modal-show");
 });
 
-rangeOff.addEventListener("click", function (evt) {
+linkMap.addEventListener("click", function (evt) {
   evt.preventDefault();
+  popupMap.classList.add("modal-show");
+});
+
+linkMapClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popupMap.classList.remove("modal-show");
 });
