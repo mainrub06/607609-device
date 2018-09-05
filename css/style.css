@@ -636,7 +636,6 @@ a {
 /* .slider-table {
   margin-left: 2px;
 } */
-
 .popular-block {
   width: 1160px;
   margin-bottom: 85px;
@@ -1010,7 +1009,7 @@ a {
   position: absolute;
   width: 14px;
   height: 12px;
-  left: 1px;
+  left: 3px;
   top: 50%;
   margin-top: -6px;
   background-image: url("../img/user.svg");
@@ -1891,6 +1890,11 @@ a {
 }
 
 /*---------------Стилизация каталога------------------*/
+
+.inner-page .page-header {
+  padding-top: 31px;
+}
+
 .inner-page .user-block::before {
   right: 205px;
 }
@@ -1911,12 +1915,13 @@ a {
 }
 
 .inner-page .user-name {
-  margin-right: 20px;
+  margin-right: 18px;
+  margin-left: 2px;
 }
 
 .catalog-nav .catalog-name-breadcrumbs {
-  padding-top: 25px;
-  padding-bottom: 44px;
+  padding-top: 24px;
+  padding-bottom: 46px;
 }
 
 .breadcrumbs-item {
@@ -1988,15 +1993,15 @@ a {
   min-height: 45px;
   margin: 0;
   padding-left: 60px;
-  padding-top: 25px;
+  padding-top: 22px;
   background-color: #dbdbdb;
 }
 
 .filters .catalog-goods-sort {
   width: 760px;
-  min-height: 45px;
+  min-height: 48px;
   padding-left: 72px;
-  padding-top: 25px;
+  padding-top: 22px;
 }
 
 .catalog-goods-sort p {
@@ -2049,19 +2054,24 @@ a {
 }
 
 .range {
+  position: relative;
   min-height: 70px;
-  margin-top: 72px;
+  margin-top: 70px;
+  padding-top: 11px;
 }
 
-.range,
 .checkbox-color,
 .bluetooth-toggle {
   position: relative;
+  padding-top: 13px;
+}
+
+.bluetooth-toggle {
   padding-top: 11px;
 }
 
 .checkbox-color {
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 }
 
 .range::after,
@@ -2179,8 +2189,8 @@ a {
 
 .form-submit {
   background-image: linear-gradient(to bottom, #efefef 0, #efefef 16px, #f4d361 17px, #f4d361 17px, #f0c52e 18px, #f0c52e 23px, #f4d361 24px, #f4d361 24px, #efefef 25px, #efefef 25px);
-  padding-bottom: 10px;
-  padding-top: 10px;
+  height: 40px;
+  box-sizing: border-box;
 }
 
 .form-submit:hover {
@@ -2212,7 +2222,7 @@ a {
 
 .catalog-goods-item {
   position: relative;
-  margin-bottom: 33px;
+  margin-bottom: 31px;
   margin-left: 40px;
   margin-top: 15px;
 }
@@ -2247,8 +2257,8 @@ a {
 }
 
 .catalog-goods-buy {
-  padding: 10px 35px;
-  height: 20px;
+  padding-left: 35px;
+  padding-right: 35px;
   width: 130px;
   margin-bottom: 7.5px;
 }
@@ -2291,6 +2301,7 @@ a {
 
 .pagination {
   margin-left: 72px;
+  margin-top: 1px;
   min-height: 68px;
   background-color: #ebebeb;
 }
@@ -2567,7 +2578,8 @@ a {
 
 .form-btn {
   margin-top: 40px;
-  padding: 10px 34px;
+  padding-left: 34px;
+  padding-right: 34px;
   background-image: linear-gradient(to bottom, #fff 0, #fff 16px, #f4d361 17px, #f4d361 17px, #f0c52e 18px, #f0c52e 23px, #f4d361 24px, #f4d361 24px, #fff 25px, #fff 25px);
 }
 
