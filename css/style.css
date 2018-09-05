@@ -592,7 +592,7 @@ a {
 }
 
 .item-guarantee {
-  margin-right: 110px;
+  margin-right: 109px;
 }
 
 /*-----------------------------------------------------------------------------
@@ -1080,7 +1080,7 @@ a {
   height: 16px;
   top: 50%;
   margin-top: -8px;
-  right: -5px;
+  right: -4px;
   background-image: url("../img/plus.svg");
   background-repeat: no-repeat;
   opacity: 0.3;
