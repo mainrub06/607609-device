@@ -1136,17 +1136,17 @@ a {
   opacity: 0.3;
 }
 
-.navigation-block .item-delivery a:hover,
-.navigation-block .item-guarantee a:hover,
-.navigation-block .item-contacts a:hover,
-.navigation-block .item-catalog a:hover {
+.item-delivery a:hover,
+.item-guarantee a:hover,
+.item-contacts a:hover,
+.item-catalog a:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.navigation-block .item-catalog a:active,
-.navigation-block .item-delivery a:active,
-.navigation-block .item-guarantee a:active,
-.navigation-block .item-contacts a:active {
+.item-catalog a:active,
+.item-delivery a:active,
+.item-guarantee a:active,
+.item-contacts a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
