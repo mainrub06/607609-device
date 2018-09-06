@@ -1253,6 +1253,7 @@ a {
 .row-1,
 .row-2 {
   display: inline-block;
+  vertical-align: middle;
   margin-right: 78px;
   padding: 0;
 }
