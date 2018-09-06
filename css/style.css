@@ -2449,13 +2449,12 @@ a {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  width: 60px;
+  width: 57px;
   height: 57px;
   border: 2px solid #000;
   border-radius: 50%;
   opacity: 0.2;
-  padding-top: 3px;
-  top: 29px;
+  top: 27px;
   right: 27px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -2767,10 +2766,11 @@ a {
   margin-top: 40px;
   padding-left: 34px;
   padding-right: 34px;
-  background-image: -webkit-linear-gradient(top, #fff 0, #fff 16px, #f4d361 17px, #f4d361 17px, #f0c52e 18px, #f0c52e 23px, #f4d361 24px, #f4d361 24px, #fff 25px, #fff 25px);
-  background-image: -o-linear-gradient(top, #fff 0, #fff 16px, #f4d361 17px, #f4d361 17px, #f0c52e 18px, #f0c52e 23px, #f4d361 24px, #f4d361 24px, #fff 25px, #fff 25px);
-  background-image: linear-gradient(to bottom, #fff 0, #fff 16px, #f4d361 17px, #f4d361 17px, #f0c52e 18px, #f0c52e 23px, #f4d361 24px, #f4d361 24px, #fff 25px, #fff 25px);
+  background-image: -webkit-linear-gradient(top, transparent 0, transparent 16px, #f4d361 17px, #f4d361 17px, #f0c52e 18px, #f0c52e 23px, #f4d361 24px, #f4d361 24px, transparent 25px, transparent 25px);
+  background-image: -o-linear-gradient(top, transparent 0, transparent 16px, #f4d361 17px, #f4d361 17px, #f0c52e 18px, #f0c52e 23px, #f4d361 24px, #f4d361 24px, transparent 25px, transparent 25px);
+  background-image: linear-gradient(to bottom, transparent 0, transparent 16px, #f4d361 17px, #f4d361 17px, #f0c52e 18px, #f0c52e 23px, #f4d361 24px, #f4d361 24px, transparent 25px, transparent 25px);
   height: 40px;
+  background-color: #fff;
 }
 
 .form-btn:hover {
