@@ -601,7 +601,7 @@ a {
 }
 
 .item-guarantee {
-  margin-right: 105.9px;
+  margin-right: 106px;
 }
 
 /*-----------------------------------------------------------------------------
@@ -2088,7 +2088,7 @@ a {
   background: url("../img/nav-arrow.svg") no-repeat;
   background-size: 4px auto;
   width: 4px;
-  height: 7px;
+  height: 10px;
   right: 21px;
   top: 50%;
   margin-top: -3.5px;
@@ -2273,7 +2273,7 @@ a {
   cursor: pointer;
 }
 
-.checkbox-input:checked+.checkbox-btn::after {
+.checkbox-input:checked + .checkbox-btn::after {
   content: "";
   position: absolute;
   background: url("../img/checkbox-on.svg") no-repeat;
