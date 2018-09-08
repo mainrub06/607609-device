@@ -2733,19 +2733,22 @@ a {
   right: 25px;
 }
 
-.feedback-close a {
+.feedback-close button {
   display: block;
   width: 55px;
   height: 55px;
   background: url("../img/modal-close.svg") no-repeat;
   opacity: 0.5;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 }
 
-.feedback-close a:hover {
+.feedback-close button:hover {
   opacity: 1;
 }
 
-.feedback-close a:active {
+.feedback-close button:active {
   opacity: 0.3;
 }
 
@@ -2825,19 +2828,22 @@ a {
   z-index: 7;
 }
 
-.map-popup-close a {
+.map-popup-close button {
   display: block;
   width: 55px;
   height: 55px;
   background: url("../img/modal-close.svg") no-repeat;
   opacity: 0.5;
+  padding: 0;
+  cursor: pointer;
+  border: 0;
 }
 
-.map-popup-close a:hover {
+.map-popup-close button:hover {
   opacity: 1;
 }
 
-.map-popup-close a:active {
+.map-popup-close button:active {
   opacity: 0.3;
 }
 
