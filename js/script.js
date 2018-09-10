@@ -11,7 +11,6 @@ var massage = popup.querySelector("textarea");
 
 
 
-
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
@@ -41,8 +40,29 @@ form.addEventListener("submit", function (evt) {
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
+
+    if (!email.value) {
+      email.classList.add("feedback-input-error");
+    } else {
+      email.classList.remove("feedback-input-error");
+    }
+
+    if (!focusName.value) {
+      focusName.classList.add("feedback-input-error");
+    } else {
+      focusName.classList.remove("feedback-input-error");
+    }
+
+    if (!massage.value) {
+      massage.classList.add("feedback-textarea-error");
+    } else {
+      massage.classList.remove("feedback-textarea-error");
+    }
   } else {
     evt.preventDefault();
+    email.classList.remove("feedback-input-error");
+    focusName.classList.remove("feedback-input-error");
+    massage.classList.remove("feedback-textarea-error");
   }
 
 });

@@ -1206,7 +1206,7 @@ a {
   width: 16px;
   height: 16px;
   top: 50%;
-  margin-top: -8px;
+  transform: translateY(-50%);
   right: 0px;
   background-image: url("../img/plus.svg");
   background-repeat: no-repeat;
@@ -1930,8 +1930,7 @@ a {
 }
 
 .buyer-block-item:hover a::before {
-  opacity: 1;
-  color: white;
+  opacity: 0.6;
 }
 
 .buyer-block-item:active a::before {
@@ -2048,12 +2047,11 @@ a {
   opacity: 0.3;
 }
 
-/*Здесь надо оживить иконки пользователя, корзины и сравнения.*/
 .buyer-block-item a {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.buyer-block-item a:hover {
+.buyer-block-item:hover a {
   color: white;
   opacity: 1;
 }
@@ -2892,13 +2890,22 @@ a {
   margin-bottom: 36px;
 }
 
+.feedback-container div {
+  width: 380px;
+}
+.feedback-container div:nth-child(2) {
+  padding-left: 40px;
+}
+
 .feedback input {
   width: 340px;
   border: none;
   background-color: #f2f2f2;
-  padding: 17px 0;
-  padding-left: 20px;
-  margin-right: 37px;
+  padding: 17px 0 17px 20px;
+}
+
+.form-name {
+  display: block;
 }
 
 .feedback textarea {
@@ -2923,21 +2930,38 @@ a {
 }
 
 .feedback input:focus {
+  width: 337px;
+  padding: 14px 0 14px 17px;
   border: 3px solid #f7e296;
-  padding: 14px 0;
-  padding-left: 17px;
   outline: none;
   background-color: #fff;
-  color: black;
-
+  color: #464646;
 }
 
-/* .feedback textarea:focus {
+.feedback textarea:focus {
   padding-top: 14px;
   padding-left: 17px;
   outline: none;
   background-color: #fff;
-} */
+  border: 3px solid #f7e296;
+  color: #464646;
+}
+
+.feedback .feedback-input-error {
+  width: 337px;
+  padding: 14px 0 14px 17px;
+  background-color: #f6dada;
+  border: 3px solid #f6dada;
+  color: #464646;
+}
+
+.feedback .feedback-textarea-error {
+  padding-top: 14px;
+  padding-left: 17px;
+  background-color: #f6dada;
+  border: 3px solid #f6dada;
+  color: #464646;
+}
 
 .form-btn {
   margin-top: 40px;
@@ -3040,7 +3064,7 @@ a {
   opacity: 0.3;
 }
 
-.footer-top a:first-of-type:hover {
+.footer-top > a:hover {
   opacity: 0.6;
 }
 
