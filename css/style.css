@@ -620,15 +620,21 @@ a {
 .item-catalog {
   width: 230px;
   padding-right: 16px;
-  margin-right: 297px;
+  margin-right: 296px;
 }
 
 .item-delivery {
-  margin-right: 34px;
+  width: 125px;
+  margin-right: 33px;
 }
 
 .item-guarantee {
-  margin-right: 105px;
+  width: 115px;
+  margin-right: 107px;
+}
+
+.item-contacts {
+  width: 122px;
 }
 
 /*-----------------------------------------------------------------------------
