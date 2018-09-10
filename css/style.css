@@ -101,6 +101,18 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.navigation-block input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.navigation-block input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.navigation-block input {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .navigation-top a {
   line-height: 30px;
 }
@@ -311,6 +323,21 @@ a {
 
 .feedback-form input::-webkit-input-placeholder,
 .feedback-form textarea::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.feedback-form input::-ms-input-placeholder,
+.feedback-form textarea::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.feedback-form input::placeholder,
+.feedback-form textarea::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.feedback-form input,
+.feedback-form textarea {
   color: rgba(0, 0, 0, 0.3);
 }
 
