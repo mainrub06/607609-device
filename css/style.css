@@ -2234,18 +2234,24 @@ a {
   display: block;
 }
 
-.catalog-goods-buttons li:nth-child(1) {
+.not-active a {
   background: url("../img/icon-up-dir.svg") no-repeat;
   background-size: 11px auto;
   width: 11px;
   height: 10px;
 }
 
-.catalog-goods-buttons li:nth-child(2) {
+.active a {
   background: url("../img/icon-down-dir.svg") no-repeat;
   background-size: 11px auto;
   width: 11px;
   height: 10px;
+}
+
+.active:focus a {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .range {
@@ -2369,6 +2375,11 @@ a {
   cursor: pointer;
 }
 
+.checkbox-input:focus + .checkbox-btn {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
 .checkbox-input:checked:disabled + .checkbox-btn::after {
   content: "";
   position: absolute;
@@ -2464,8 +2475,10 @@ a {
   margin-top: -12.5px;
 }
 
-.input-radio:checked:disablied + label::before {
-  opacity: 0.25;
+.input-radio:checked:focus + label {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .input-radio:disablied + label::before {
