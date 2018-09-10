@@ -2898,7 +2898,7 @@ a {
   background-color: #f2f2f2;
   padding: 17px 0;
   padding-left: 20px;
-  margin-right: 40px;
+  margin-right: 37px;
 }
 
 .feedback textarea {
@@ -2911,6 +2911,33 @@ a {
   padding-top: 17px;
   padding-left: 20px;
 }
+
+.feedback textarea:hover,
+.feedback input:hover {
+  background-color: #eaeaea;
+}
+
+.feedback textarea:hover,
+.feedback input:hover {
+  background-color: #eaeaea;
+}
+
+.feedback input:focus {
+  border: 3px solid #f7e296;
+  padding: 14px 0;
+  padding-left: 17px;
+  outline: none;
+  background-color: #fff;
+  color: black;
+
+}
+
+/* .feedback textarea:focus {
+  padding-top: 14px;
+  padding-left: 17px;
+  outline: none;
+  background-color: #fff;
+} */
 
 .form-btn {
   margin-top: 40px;
